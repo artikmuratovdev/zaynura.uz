@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingvokulturologiya terminlari mashqi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #818cf8;
+            --success-color: #22c55e;
+            --error-color: #ef4444;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: var(--card-background);
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 0.5rem;
+            background-color: #e2e8f0;
+            border-radius: 0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 0.25rem;
+            transition: width 0.3s ease;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        .definition-card {
+            background-color: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            color: #1e293b;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        .hint {
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        button.hint-btn {
+            background-color: #64748b;
+        }
+
+        .feedback {
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .correct {
+            background-color: #dcfce7;
+            color: var(--success-color);
+        }
+
+        .incorrect {
+            background-color: #fee2e2;
+            color: var(--error-color);
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .results-table th,
+        .results-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lingvokulturologiya terminlari mashqi</h1>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="stats">
+            <span>To'g'ri javoblar: <span id="correct-count">0</span></span>
+            <span>Urinishlar: <span id="attempts-count">0</span></span>
+            <span>Ball: <span id="score">0</span>%</span>
+        </div>
+        <div class="definition-card" id="definition"></div>
+        <div class="input-group">
+            <input type="text" id="input" placeholder="Termini kiriting..." autocomplete="off">
+            <p class="hint" id="hint"></p>
+        </div>
+        <div class="button-group">
+            <button onclick="checkAnswer()">
+                <i class="fas fa-check"></i>
+                Tasdiqlash
+            </button>
+            <button class="hint-btn" onclick="showHint()">
+                <i class="fas fa-lightbulb"></i>
+                Yordam
+            </button>
+        </div>
+        <div class="feedback" id="feedback"></div>
+    </div>
+
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Natijalar</h2>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Ko'rsatkich</th>
+                        <th>Natija</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+            <button onclick="restartQuiz()" style="margin-top: 1rem; width: 100%;">
+                <i class="fas fa-redo"></i>
+                Qayta boshlash
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const terms = [
+        { term: "lingvokulturologiya", definition: "Til va madaniyatning o‘zaro aloqasini o‘rganuvchi fan sohasi." },
+{ term: "kulturalllar (Culturonyms)", definition: "Muayyan millat yoki madaniyatga xos til birliklari (so‘zlar, iboralar) orqali ifodalangan tushunchalar." },
+{ term: "til va madaniyat", definition: "Til va madaniyatning o‘zaro bog‘liqligi, til madaniyatni saqlash va uzatish vositasi sifatida ko‘rilishi." },
+{ term: "lingvokultural konsept", definition: "So‘z yoki ibora orqali ifodalangan madaniy ahamiyatga ega bo‘lgan tushuncha." },
+{ term: "etnofoforizm", definition: "Milliy madaniyatni aks ettiruvchi frazeologizmlar va barqaror birikmalar." },
+{ term: "lingvokultural kod", definition: "Tilning madaniyatni aks ettiruvchi ichki semantik tuzilmasi." },
+{ term: "kultur-tekst", definition: "Millatning madaniy hayoti va dunyoqarashini aks ettiruvchi matnlar." },
+{ term: "til arxaizmlari", definition: "Madaniyat tarixini aks ettiruvchi, hozirda kam qo‘llaniladigan til birliklari." },
+{ term: "madaniy sema", definition: "Til birliklarida yashiringan madaniy ma’no yoki konnotatsiya." },
+{ term: "til simbolikasi", definition: "So‘zlarning madaniy va ramziy ahamiyatini o‘rganish sohasi." },
+{ term: "etnografik lingvistika", definition: "Muayyan millatga xos bo‘lgan til va uning madaniyat bilan bog‘liqligini o‘rganuvchi yo‘nalish." },
+{ term: "til mentaliteti", definition: "Millatning tili orqali aks etgan dunyoqarashi va fikrlash uslubi." },
+{ term: "konseptual maydon", definition: "Muayyan madaniyatga xos tushunchalar tizimi va ularni ifodalovchi lingvistik birliklar." },
+{ term: "madaniy semantika", definition: "Til birliklarining madaniyatga xos ma’nolari va qo‘llanishini o‘rganish sohasi." },
+{ term: "madaniy kodlar", definition: "Til birliklari orqali madaniyatni ifodalashda ishlatiladigan ramziy tizim." },
+{ term: "simvolizm", definition: "Milliy madaniyatni aks ettiruvchi belgilar va ramzlarning til orqali ifodalanishi." },
+{ term: "madaniy frazeologiya", definition: "Muayyan madaniyatga xos bo‘lgan barqaror iboralar va ularning ma’nolari." },
+{ term: "tilning kommunikativ roli", definition: "Tilning madaniy qiymatlarni uzatish va saqlashdagi ahamiyati." }
+
+    
+        ];
+
+        let currentIndex = 0;
+        let correctAnswers = 0;
+        let totalAttempts = 0;
+        let startTime = Date.now();
+
+        function updateProgress() {
+            const progress = (currentIndex / terms.length) * 100;
+            document.getElementById("progress").style.width = `${progress}%`;
+            document.getElementById("correct-count").textContent = correctAnswers;
+            document.getElementById("attempts-count").textContent = totalAttempts;
+            document.getElementById("score").textContent = Math.round((correctAnswers / Math.max(totalAttempts, 1)) * 100);
+        }
+
+        function showNextDefinition() {
+            if (currentIndex < terms.length) {
+                document.getElementById("definition").innerText = terms[currentIndex].definition;
+                document.getElementById("input").value = "";
+                document.getElementById("feedback").className = "feedback";
+                document.getElementById("hint").style.display = "none";
+                document.getElementById("input").focus();
+            } else {
+                showResults();
+            }
+            updateProgress();
+        }
+
+        function showHint() {
+            const term = terms[currentIndex].term;
+            const hint = `Birinchi harf: ${term[0].toUpperCase()}, Uzunlik: ${term.length} ta harf`;
+            document.getElementById("hint").innerText = hint;
+            document.getElementById("hint").style.display = "block";
+        }
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById("input").value.trim().toLowerCase();
+            const correctAnswer = terms[currentIndex].term.toLowerCase();
+            totalAttempts++;
+
+            const feedback = document.getElementById("feedback");
+            if (userAnswer === correctAnswer) {
+                correctAnswers++;
+                feedback.innerText = "To'g'ri javob! 👏";
+                feedback.className = "feedback correct visible";
+                currentIndex++;
+                setTimeout(showNextDefinition, 1000);
+            } else {
+                feedback.innerText = "Noto'g'ri javob. Qayta urinib ko'ring! 🤔";
+                feedback.className = "feedback incorrect visible";
+            }
+            updateProgress();
+        }
+
+        function showResults() {
+            const endTime = Date.now();
+            const timeSpent = Math.round((endTime - startTime) / 1000);
+            const accuracy = Math.round((correctAnswers / totalAttempts) * 100);
+
+            const resultsBody = document.getElementById("results-body");
+            resultsBody.innerHTML = `
+                <tr><td>To'g'ri javoblar</td><td>${correctAnswers} / ${terms.length}</td></tr>
+                <tr><td>Umumiy urinishlar</td><td>${totalAttempts}</td></tr>
+                <tr><td>Aniqlik</td><td>${accuracy}%</td></tr>
+                <tr><td>Sarflangan vaqt</td><td>${timeSpent} soniya</td></tr>
+            `;
+
+            document.getElementById("results-modal").style.display = "flex";
+        }
+
+        function restartQuiz() {
+            currentIndex = 0;
+            correctAnswers = 0;
+            totalAttempts = 0;
+            startTime = Date.now();
+            document.getElementById("results-modal").style.display = "none";
+            showNextDefinition();
+        }
+
+        // Enter tugmasini bosish orqali javob yuborish
+        document.getElementById("input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                checkAnswer();
+            }
+        });
+
+        // Dastlabki holatni ko'rsatish
+        showNextDefinition();
+    </script>
+</body>
+</html>

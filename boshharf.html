@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bosh harflar imlosi</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+  
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+  
+    .header {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #333;
+    }
+  
+    .sentence-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #e3e3e3;
+      box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+    }
+  
+    .sentence-box p:first-child {
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: #555;
+    }
+  
+    .sentence-box p:last-child {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    .input-box input {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+  
+    .input-box input:focus {
+      outline: none;
+      border-color: #66a6ff;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }
+  
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  
+    .buttons button {
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+  
+    .buttons button:hover {
+      transform: scale(1.05);
+    }
+  
+    .buttons .check {
+      background-color: #28a745;
+      color: #fff;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .buttons .check:hover {
+      background-color: #218838;
+    }
+  
+    .buttons .next {
+      background-color: #007bff;
+      color: #fff;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .buttons .next:hover {
+      background-color: #0056b3;
+    }
+  
+    .alert {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+      animation: fadeIn 0.5s ease;
+    }
+  
+    .alert.correct {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+  
+    .alert.incorrect {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+  
+    .progress {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header">Bosh harflar imlosi</div>
+    <div class="sentence-box">
+      <p>Berilgan jumla:</p>
+      <p id="sentence-incorrect"></p>
+    </div>
+    <div class="input-box">
+      <input type="text" id="user-input" placeholder="Javobingizni bu yerga yozing...">
+    </div>
+    <div class="buttons">
+      <button class="check" onclick="checkAnswer()">Tekshirish</button>
+      <button class="next" onclick="nextSentence()">Keyingi jumla</button>
+    </div>
+    <div id="alert" class="alert" style="display: none;"></div>
+    <div class="progress">
+      <span id="progress"></span>
+    </div>
+  </div>
+
+  <script>
+    const sentences = [
+      {
+        incorrect: "mustaqillik kuni va xotira kuni o'zbekistonning muhim bayramlaridandir",
+        correct: "Mustaqillik kuni va Xotira kuni O'zbekistonning muhim bayramlaridandir"
+      },
+      {
+        incorrect: "toshkent shahri o'zbekistonning poytaxti hisoblanadi",
+        correct: "Toshkent shahri O'zbekistonning poytaxti hisoblanadi"
+      },
+      {
+        incorrect: "Dilbar O'rinova toshkent shahrida yashaydi",
+        correct: "Dilbar O'rinova Toshkent shahrida yashaydi",
+      },
+      {
+        incorrect: "oltinsoy tumani surxondaryo viloyati tarkibida",
+        correct:  "Oltinsoy tumani Surxondaryo viloyati tarkibida",
+      },
+      {
+        incorrect: "Misr arab respublikasi afrikaning shimoliy-sharqiy qismida joylashgan davlatdir",
+        correct: "Misr Arab Respublikasi Afrikaning shimoliy-sharqiy qismida joylashgan davlatdir",
+      },
+      {
+        incorrect: "Rossiya federatsiyasi konstitutsiyasi Rossiya federatsiyasining eng yuqori normativ-huquqiy hujjatidir",
+        correct: "Rossiya Federatsiyasi Konstitutsiyasi Rossiya Federatsiyasining eng yuqori normativ-huquqiy hujjatidir",
+      },
+      {
+        incorrect: "O'zbekiston Respublikasining oliy majlisi oliy davlat vakillik organi bo'lib, qonun chiqaruvchi hokimiyatni amalga oshiradi",
+        correct: "O'zbekiston Respublikasining Oliy Majlisi oliy davlat vakillik organi bo'lib, qonun chiqaruvchi hokimiyatni amalga oshiradi",
+      },
+      {
+        incorrect: "Qurolli kuchlarning komplektlanishi qonunchilikda belgilangan tartibda amalga oshiriladi",
+        correct: "Qurolli Kuchlarning komplektlanishi qonunchilikda belgilangan tartibda amalga oshiriladi",
+      },
+      
+      // Qo'shimcha jumlalarni bu yerga qo'shing
+    ];
+
+    let currentIndex = 0;
+
+    function loadSentence() {
+      document.getElementById("sentence-incorrect").textContent = sentences[currentIndex].incorrect;
+      document.getElementById("user-input").value = "";
+      document.getElementById("alert").style.display = "none";
+      document.getElementById("progress").textContent = `Jumla ${currentIndex + 1} / ${sentences.length}`;
+    }
+
+    function checkAnswer() {
+      const userInput = document.getElementById("user-input").value.trim();
+      const alertBox = document.getElementById("alert");
+
+      if (userInput === sentences[currentIndex].correct) {
+        alertBox.textContent = "To'g'ri! Juda yaxshi!";
+        alertBox.className = "alert correct";
+      } else {
+        alertBox.textContent = `Noto'g'ri. To'g'ri javob: ${sentences[currentIndex].correct}`;
+        alertBox.className = "alert incorrect";
+      }
+
+      alertBox.style.display = "block";
+    }
+
+    function nextSentence() {
+      currentIndex = (currentIndex + 1) % sentences.length;
+      loadSentence();
+    }
+
+    // Boshlanishida birinchi jumlani yuklash
+    loadSentence();
+  </script>
+</body>
+</html>

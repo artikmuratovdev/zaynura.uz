@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonetik Talaffuz Testi</title>
+    <link rel="stylesheet" href="fonetika2.css">
+</head>
+<body>
+    <header>
+        <h1>Fonetik Talaffuz Testi</h1>
+        <p>So‘zlarni talaffuz qiling va natijani ko‘ring!</p>
+    </header>
+
+    <div class="container">
+        <h2>Talaffuz qilish uchun so‘zni tanlang:</h2>
+        <p id="wordToPronounce">So‘zni kuting...</p>
+
+        <div class="buttons">
+            <button id="startRecognition">Talaffuzni boshlash</button>
+            <button id="stopRecognition" disabled>To‘xtatish</button>
+        </div>
+
+        <div id="result">
+            <p>Talaffuz qilingan so‘z: <span id="recognizedWord">...</span></p>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Fonetik Talaffuz Testi</p>
+    </footer>
+
+    <script src="fonetika2.js"></script>
+</body>
+</html>

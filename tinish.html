@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinish belgilari imlosi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .sentence-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .input-area {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        .check-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .next-btn {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .hint-btn {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .result {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .hint-box {
+            background-color: #e7f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .progress {
+            text-align: center;
+            color: #666;
+        }
+
+        .hint-box ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tinish belgilari imlosi</h1>
+        <div class="sentence-box" id="currentSentence"></div>
+        <div class="input-area">
+            <textarea id="userInput" placeholder="Tinish belgilarini to'g'ri qo'yib gapni qayta yozing..."></textarea>
+        </div>
+        <div class="button-group">
+            <button class="check-btn" onclick="checkAnswer()">Tekshirish</button>
+            <button class="next-btn" onclick="nextSentence()">Keyingi jumla</button>
+            <button class="hint-btn" onclick="toggleHint()">Yordam</button>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="hint-box" id="hintBox">
+            <strong>Tinish belgilari qoidalari:</strong>
+            <ul>
+                <li>Vergul (,) - sanash, ajratish uchun</li>
+                <li>Nuqta (.) - tugallangan fikrdan keyin</li>
+                <li>So'roq belgisi (?) - so'roq gaplardan keyin</li>
+                <li>Undov belgisi (!) - his-hayajon ifodalangan gaplardan keyin</li>
+                <li>Tire (-) - ega va kesim orasida</li>
+                <li>Qo'shtirnoq ("") - ko'chirma gaplar uchun</li>
+                <li>Qo'shtirnoq (-) - ko'chirma gaplar uchun</li>
+                
+            </ul>
+        </div>
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <script>
+        const sentences = [
+            {
+                withoutPunctuation: "Ofarin  dedi Mamat bobo",
+                correct: "Ofarin! - dedi Mamat bobo",
+            },
+            {
+                withoutPunctuation: "Aytgil do'stim nima qildik vatan uchun",
+                correct: "Aytgil, do'stim, nima qildik vatan uchun?!"
+            },
+            {
+                withoutPunctuation: "Bahor keldi qushlar qaytdi gullar ochildi",
+                correct: "Bahor keldi, qushlar qaytdi, gullar ochildi."
+            },
+            {
+                withoutPunctuation: "Bilasizmi bugun qanday kun",
+                correct: "Bilasizmi, bugun qanday kun?"
+            },
+            {
+                withoutPunctuation: "Darsga kech qolsam nima boladi",
+                correct: "Darsga kech qolsam, nima bo'ladi?"
+            },
+
+            {
+                withoutPunctuation: "Omon Muxtorov shunday degan edi Abdulla Qahhorning shaxsiy ko'zoynagi bo'lmaganida u hech qachon Qahhor bo'lmasdi",
+                correct:  "Omon Muxtorov shunday degan edi: Abdulla Qahhorning shaxsiy ko'zoynagi bo'lmaganida, u hech qachon Qahhor bo'lmasdi",
+            },
+            {
+                withoutPunctuation: "Oltmishga kirib bildim umrim bekorga o'tmabdi odamlarga kerakli ekanman hayotda iz qoldiribman",
+                correct: "Oltmishga kirib bildim: umrim bekorga o'tmabdi, odamlarga kerakli ekanman hayotda iz qoldiribman",
+            },
+            {
+                withoutPunctuation: "To'rt narsa hamma uchun kerak: salomatlik, go'zal xulq, rostgo'ylik va halol mehnat",
+                correct: "To'rt narsa hamma uchun kerak: salomatlik, go'zal xulq, rostgo'ylik va halol mehnat",
+            },
+            {
+                withoutPunctuation: "Iya yubilyar ekansanda, shoshmay turchi, hozir",
+                correct: "Iya, yubilyar ekansan-da, shoshmay tur-chi, hozir",
+            },
+            {
+                withoutPunctuation: "O'g'rigina bolam, hoynahoy, biror tiriklikning ko'yida tomga chiqqan ko'rinasan",  
+                correct: "O'g'rigina bolam, hoynahoy, biror tiriklikning ko'yida tomga chiqqan ko'rinasan?",  
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function displaySentence() {
+            document.getElementById('currentSentence').textContent = sentences[currentIndex].withoutPunctuation;
+            document.getElementById('progress').textContent = `${currentIndex + 1} / ${sentences.length}`;
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('userInput').value = '';
+        }
+
+        function checkAnswer() {
+            const userInput = document.getElementById('userInput').value.trim();
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+
+            if (userInput === sentences[currentIndex].correct) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = "To'g'ri! Juda yaxshi!";
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = `Noto'g'ri. To'g'ri javob:<br>${sentences[currentIndex].correct}`;
+            }
+        }
+
+        function nextSentence() {
+            currentIndex = (currentIndex + 1) % sentences.length;
+            displaySentence();
+        }
+
+        function toggleHint() {
+            const hintBox = document.getElementById('hintBox');
+            hintBox.style.display = hintBox.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Initialize first sentence
+        displaySentence();
+    </script>
+</body>
+</html>

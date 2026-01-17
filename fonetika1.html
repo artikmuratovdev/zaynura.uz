@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilshunoslik Virtual Laboratoriyasi</title>
+    <link rel="stylesheet" href="fonetika.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Tilshunoslik Virtual Laboratoriyasi</h1>
+            <p>Talabalar uchun talaffuz mashqlari va tilshunoslik faniga oid interaktiv vosita.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Talaffuzni o‘rganing</h2>
+        <div class="word-container">
+            <p class="word-display" id="wordToPronounce">So‘zni kuting...</p>
+        </div>
+        <div class="input-container">
+            <h3>10 ta so‘zni kiriting:</h3>
+            <input type="text" id="wordInput1" placeholder="So‘z 1">
+            <input type="text" id="wordInput2" placeholder="So‘z 2">
+            <input type="text" id="wordInput3" placeholder="So‘z 3">
+            <input type="text" id="wordInput4" placeholder="So‘z 4">
+            <input type="text" id="wordInput5" placeholder="So‘z 5">
+            <input type="text" id="wordInput6" placeholder="So‘z 6">
+            <input type="text" id="wordInput7" placeholder="So‘z 7">
+            <input type="text" id="wordInput8" placeholder="So‘z 8">
+            <input type="text" id="wordInput9" placeholder="So‘z 9">
+            <input type="text" id="wordInput10" placeholder="So‘z 10">
+            <button id="submitWords">So‘zlarni kiritish</button>
+        </div>
+        <div class="button-container">
+            <button id="startRecording" disabled>Yozishni boshlash</button>
+            <button id="stopRecording" disabled>Yozishni to‘xtatish</button>
+            <button id="compareResult" disabled>Natijani ko‘rsatish</button>
+        </div>
+        <audio id="audioPlayback" controls></audio>
+        <div class="feedback">
+            <p id="feedbackMessage">Talaffuzni boshlash uchun yozishni boshlang!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Tilshunoslik Virtual Laboratoriyasi - Barcha huquqlar himoyalangan</p>
+    </footer>
+
+    <script src="fonetika.js"></script>
+</body>
+</html>

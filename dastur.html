@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dastur Haqida</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #f4f6f7;
+            --text-color: #2c3e50;
+            --card-background: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-card {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .content-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .back-link:hover {
+            background: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Asosiy Sahifa
+        </a>
+
+        <div class="header">
+            <h1>Dastur Haqida</h1>
+        </div>
+
+        <div class="content-card">
+            <h2 class="section-title">Sayt Maqsadi</h2>
+            <div class="content-section">
+                <p>Ushbu virtual laboratoriya O'zbek tilini o'rganish va rivojlantirish uchun innovatsion platforma bo'lib xizmat qiladi. Platforma tilshunoslik sohasida interaktiv ta'lim imkoniyatlarini taqdim etadi.</p>
+            </div>
+
+            <h2 class="section-title">Asosiy Imkoniyatlar</h2>
+            <div class="content-section">
+                <ul>
+                    <li>• Fonetika va imlo mashqlari</li>
+                    <li>• Morfologik va sintaktik tahlil</li>
+                    <li>• Interaktiv o'quv materiallari</li>
+                    <li>• Tilshunoslik terminlari bazasi</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Platforma Maqsadi</h2>
+            <div class="content-section">
+                <p>O'zbekistonda til savodxonligini oshirish, tilshunoslik faniga qiziqishni uyg'otish va zamonaviy o'quv metodologiyalarni joriy etish.</p>
+            </div>
+
+            <h2 class="section-title">Dasturchi</h2>
+            <div class="content-section">
+                <p>Eshmuminov G'iyosiddin</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

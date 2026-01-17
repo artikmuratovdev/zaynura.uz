@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zamonaviy tilshunoslik virtual laboratoriyasi: fonetika, morfologiya, sintaksis va boshqa tillar bilan bog'liq mashqlar.">
+    <meta name="keywords" content="lingvistik, virtual laboratoriya, fonetika, morfologiya, uslubshunoslik,termin, tarjima nazariyasi">
+    <meta name="author" content="Kadirova Zaynura Zayniddinovna">
+    <title>Lingvistik virtual laboratoriya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LINGVISTIK VIRTUAL LABORATORIYA</h1>
+            <div class="nav-buttons">
+                <div class="card">
+                    <a href="dastur.html" class="nav-btn">
+                        <i class="fas fa-info-circle"></i> Dastur haqida
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="muallif.html" class="nav-btn">
+                        <i class="fas fa-user"></i> Muallif haqida
+                    </a>
+                </div>
+            </div>
+            
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">17 Mavzu</div>
+                
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">100+ Mashqlar</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">700+ Misollar</div>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="card">
+                <a href="fonetika1.html">
+                    <i class="fas fa-microphone-alt"></i>
+                    Fonetika 1
+                </a>
+            </div>
+            <div class="card">
+                <a href="fonetika2.html">
+                    <i class="fas fa-wave-square"></i>
+                    Fonetika 2
+                </a>
+            </div>
+            <div class="card">
+                <a href="soz.html">
+                    <i class="fas fa-language"></i>
+                    Aralash imlo mashqlari
+                </a>
+            </div>
+            <div class="card">
+                <a href="xh.html">
+                    <i class="fas fa-spell-check"></i>
+                    X va H imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="unli.html">
+                    <i class="fas fa-volume-up"></i>
+                    Unlilar imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="undosh.html">
+                    <i class="fas fa-volume-down"></i>
+                    Undoshlar imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="qoshib.html">
+                    <i class="fas fa-link"></i>
+                    Qo'shib yozish imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="chiziq.html">
+                    <i class="fas fa-minus"></i>
+                    Chiziqcha bilan yozish imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="tinish.html">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Tinish belgilar imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="boshharf.html">
+                    <i class="fas fa-font"></i>
+                    Bosh harflar imlosi
+                </a>
+            </div>
+            <div class="card">
+                <a href="termin.html">
+                    <i class="fas fa-book"></i>
+                    Fonetik terminlar mashqi
+                </a>
+            </div>
+            <div class="card">
+                <a href="morfologiya.html">
+                    <i class="fas fa-book"></i>
+                    Morfologik terminlar mashqi
+                </a>
+            </div>
+            <div class="card">
+                <a href="sintax.html">
+                    <i class="fas fa-book"></i>
+                    Sintaktik terminlar mashqi
+                </a>
+            </div>
+            <div class="card">
+                <a href="uslub.html">
+                    <i class="fas fa-book"></i>
+                    Uslubshunoslik terminlar mashqi
+                </a>
+            </div>
+            <div class="card">
+                <a href="kompling.html">
+                    <i class="fas fa-book"></i>
+                    Kompyuter lingvistikasi terminlar mashqi
+                </a>
+            </div>
+            <div class="card">
+                <a href="lingvo.html">
+                    <i class="fas fa-book"></i>
+                    Lingvokulturologiya terminlar mashqi
+                </a>
+            </div>
+            <div class="card">
+                <a href="tarjima.html">
+                    <i class="fas fa-book"></i>
+                    Tarjima nazariyasi terminlar mashqi
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide stats and grid
+            document.querySelector('.stats-bar').style.display = 'none';
+            document.querySelector('.grid-container').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function hideSection(sectionId) {
+            // Hide the section
+            document.getElementById(sectionId).style.display = 'none';
+            
+            // Show stats and grid
+            document.querySelector('.stats-bar').style.display = 'flex';
+            document.querySelector('.grid-container').style.display = 'grid';
+        }
+    </script>
+</body>
+</html>

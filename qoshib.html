@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To‘g‘ri Shaklni Toping</title>
+    <link rel="stylesheet" href="qoshib.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To‘g‘ri Shaklni Toping!</h1>
+        <div id="question-container">
+            <p id="question-text">Savol</p>
+            <button class="answer-btn" id="answer1" onclick="checkAnswer(1)">Variant 1</button>
+            <button class="answer-btn" id="answer2" onclick="checkAnswer(2)">Variant 2</button>
+        </div>
+        <div id="result-container" class="hidden">
+            <p id="result-text"></p>
+            <button onclick="nextQuestion()">Keyingi Savol</button>
+        </div>
+        <div id="score-container" class="hidden">
+            <p id="score-text"></p>
+        </div>
+    </div>
+    <script src="qoshib.js"></script>
+</body>
+</html>
