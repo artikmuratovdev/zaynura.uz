@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantiqiy Test - 60 Savol</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mantiqiy Test</h1>
+            <p>Dunyo miqyosida mashhur bo'lgan 60 ta mantiqiy savol</p>
+        </header>
+
+        <div class="test-info">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="stats">
+                <span id="current-question">1</span> / 60
+                <span id="score">To'g'ri: 0</span>
+            </div>
+        </div>
+
+        <main>
+            <div class="question-container" id="question-container">
+                <div class="question" id="question">
+                    Savol yuklanmoqda...
+                </div>
+                <div class="options" id="options">
+                    <!-- Variantlar shu yerga yuklanadi -->
+                </div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="controls">
+                <button id="next-btn" disabled>Keyingi savol</button>
+                <button id="restart-btn" style="display: none;">Qaytadan boshlash</button>
+            </div>
+        </main>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Test natijalari</h2>
+            <div class="final-score">
+                <p>Siz <span id="correct-count">0</span> ta to'g'ri javob berdingiz</p>
+                <p>Foiz: <span id="percentage">0</span>%</p>
+            </div>
+            <div class="result-message" id="result-message"></div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

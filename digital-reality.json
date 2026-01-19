@@ -1,0 +1,242 @@
+[
+  {
+    "question": "\"Bepul\" ijtimoiy tarmoqda siz nima bilan to'laysiz?",
+    "answer": "Shaxsiy ma'lumotlaringiz bilan"
+  },
+  {
+    "question": "Google siz haqingizda nimani biladi?",
+    "answer": "Siz o'zingiz haqingizda bilganingizdan ko'proq"
+  },
+  {
+    "question": "Internetda o'chirilgan ma'lumot qayerga ketadi?",
+    "answer": "Hech qayerga - u hali ham serverda saqlanadi"
+  },
+  {
+    "question": "Smartfoningiz sizni qachon kuzatadi?",
+    "answer": "Doimo, o'chirilgan bo'lsa ham"
+  },
+  {
+    "question": "\"Foydalanish shartlari\"ni kim o'qiydi?",
+    "answer": "Deyarli hech kim"
+  },
+  {
+    "question": "Facebook nima sotadi?",
+    "answer": "Sizning e'tiboringizni va ma'lumotlaringizni"
+  },
+  {
+    "question": "\"Incognito\" rejim sizni kimdan yashiradi?",
+    "answer": "Faqat brauzer tarixidan, internetdan emas"
+  },
+  {
+    "question": "Bepul Wi-Fi qanday xavfli?",
+    "answer": "Sizning barcha ma'lumotlaringiz ko'rinadi"
+  },
+  {
+    "question": "Ilovalar nima uchun mikrofon ruxsatini so'raydi?",
+    "answer": "Sizni tinglash va reklama ko'rsatish uchun"
+  },
+  {
+    "question": "Cloud xizmatida ma'lumotlaringiz kimniki?",
+    "answer": "Kompaniyaning, sizniki emas"
+  },
+  {
+    "question": "\"Bepul\" ilova qanday pul topadi?",
+    "answer": "Sizning ma'lumotlaringizni sotish orqali"
+  },
+  {
+    "question": "Instagram sizga nima ko'rsatadi?",
+    "answer": "Siz ko'rishni xohlagan narsani emas, ular xohlagan narsani"
+  },
+  {
+    "question": "Parolingiz qanchalik xavfsiz?",
+    "answer": "O'ylaganingizdan ancha zaif"
+  },
+  {
+    "question": "Internetda \"bepul\" narsa bormi?",
+    "answer": "Yo'q, hamma narsa ma'lumotlar bilan to'lanadi"
+  },
+  {
+    "question": "Telegram qanchalik xavfsiz?",
+    "answer": "Oddiy chatlar shifrlangan emas"
+  },
+  {
+    "question": "YouTube sizga video tavsiya qilish maqsadi nima?",
+    "answer": "Sizni iloji boricha uzoqroq ushlab turish"
+  },
+  {
+    "question": "\"Cookies\" nima qiladi?",
+    "answer": "Sizning internetdagi har bir harakatingizni kuzatadi"
+  },
+  {
+    "question": "Smartfon kamerasini yopish kerakmi?",
+    "answer": "Ha, ilovalar ruxsatsiz yoqishi mumkin"
+  },
+  {
+    "question": "Email bepul bo'lsa, kim to'laydi?",
+    "answer": "Reklamachilar - sizning ma'lumotlaringiz uchun"
+  },
+  {
+    "question": "VPN sizni qanchalik himoya qiladi?",
+    "answer": "VPN provayderi hali ham hamma narsani ko'radi"
+  },
+  {
+    "question": "TikTok algoritmi nima maqsad qiladi?",
+    "answer": "Sizni addiktiv holatga keltirish"
+  },
+  {
+    "question": "\"Lokatsiya xizmati o'chirilgan\" degani nima?",
+    "answer": "Faqat ilovalar uchun, operator hali ham biladi"
+  },
+  {
+    "question": "Biometrik ma'lumotlar qanchalik xavfsiz?",
+    "answer": "Bir marta o'g'irlansa, abadiy o'g'irlangan"
+  },
+  {
+    "question": "Internetdagi \"fikr erkinligi\" qayerda tugaydi?",
+    "answer": "Platformaning algoritmida"
+  },
+  {
+    "question": "WhatsApp xabarlari shifrlangan, lekin...",
+    "answer": "Meta metadata va kontaktlaringizni ko'radi"
+  },
+  {
+    "question": "\"Aqlli\" uy qurilmalari nimani kuzatadi?",
+    "answer": "Sizning butun hayot tarzingizni"
+  },
+  {
+    "question": "Online do'kon sizni qanday manipulyatsiya qiladi?",
+    "answer": "Narxlarni va chegirmalarni shaxsiy ravishda o'zgartiradi"
+  },
+  {
+    "question": "Internetda \"anonim\" bo'lish mumkinmi?",
+    "answer": "Deyarli mumkin emas"
+  },
+  {
+    "question": "Ilovalar nima uchun tez-tez yangilanadi?",
+    "answer": "Yangi kuzatuv funksiyalarini qo'shish uchun"
+  },
+  {
+    "question": "\"Shaxsiy ma'lumotlar himoyalangan\" degani nima?",
+    "answer": "Kompaniya ichida, tashqarida emas"
+  },
+  {
+    "question": "Reklama bloker nima uchun bepul?",
+    "answer": "Ba'zi reklamalar uchun pul oladi"
+  },
+  {
+    "question": "Internetdagi \"haqiqat\" kim belgilaydi?",
+    "answer": "Algoritmlar va platformalar"
+  },
+  {
+    "question": "\"Autentifikatsiya\" sizni himoya qiladimi?",
+    "answer": "Faqat hisobingizni, ma'lumotlaringizni emas"
+  },
+  {
+    "question": "Onlayn test natijalaringiz qayerga ketadi?",
+    "answer": "Psixologik profil yaratish uchun ishlatiladi"
+  },
+  {
+    "question": "\"Shaxsiylashtirish\" kimning manfaati uchun?",
+    "answer": "Kompaniyaning, sizniki emas"
+  },
+  {
+    "question": "Internetda \"o'chirilgan\" hisob qayerda?",
+    "answer": "Arxivda, hali ham mavjud"
+  },
+  {
+    "question": "\"Aqlli\" soat nima haqida xabar beradi?",
+    "answer": "Sizning sog'ligingiz va joylashuvingiz haqida"
+  },
+  {
+    "question": "Onlayn bankingning xavfsizligi nimaga bog'liq?",
+    "answer": "Sizning parol gigienangizga"
+  },
+  {
+    "question": "\"Tavsiya etilgan\" kontent kim tanlaydi?",
+    "answer": "Sun'iy intellekt, sizning zaifligingizga qarab"
+  },
+  {
+    "question": "Internetda \"bepul ta'lim\" qanday to'lanadi?",
+    "answer": "Sizning vaqtingiz va ma'lumotlaringiz bilan"
+  },
+  {
+    "question": "\"Push\" bildirishnomalar nima maqsad qiladi?",
+    "answer": "Sizni doimiy ravishda ilovaga qaytarish"
+  },
+  {
+    "question": "Onlayn do'stlaringiz haqiqiy do'stlarmi?",
+    "answer": "Ko'pincha - yo'q, faqat raqamlar"
+  },
+  {
+    "question": "\"Bulutda\" ma'lumotlar qayerda?",
+    "answer": "Boshqa birovning kompyuterida"
+  },
+  {
+    "question": "Internetdagi \"shaxsiy hayot\" mavjudmi?",
+    "answer": "Yo'q, hamma narsa kuzatiladi"
+  },
+  {
+    "question": "\"Bepul\" o'yin qanday daromad keltiradi?",
+    "answer": "Mikrotransaksiyalar va ma'lumotlar orqali"
+  },
+  {
+    "question": "Elektron pochta \"bepul\" bo'lsa, mahsulot nima?",
+    "answer": "Siz - sizning ma'lumotlaringiz"
+  },
+  {
+    "question": "\"Shifrlash\" sizni kimdan himoya qiladi?",
+    "answer": "Faqat uchinchi shaxslardan, xizmat provayderidan emas"
+  },
+  {
+    "question": "Internetdagi \"fikringiz\" kimga tegishli?",
+    "answer": "Platformaga - ular uni o'chirishi mumkin"
+  },
+  {
+    "question": "\"Onlayn xavfsizlik\" kim ta'minlaydi?",
+    "answer": "Siz o'zingiz, kompaniyalar emas"
+  },
+  {
+    "question": "\"Ijtimoiy tarmoq\" nima uchun mavjud?",
+    "answer": "Pul ishlash uchun, aloqa uchun emas"
+  },
+  {
+    "question": "Internetdagi \"erkinlik\" qayerda tugaydi?",
+    "answer": "Kompaniyaning biznes modelida"
+  },
+  {
+    "question": "\"Bepul\" musiqa xizmati nima evaziga?",
+    "answer": "Sizning tinglash odatlaringiz va ma'lumotlaringiz"
+  },
+  {
+    "question": "\"Qidiruv tarixi o'chirilgan\" degani nima?",
+    "answer": "Faqat sizning qurilmangizda, Google serverida emas"
+  },
+  {
+    "question": "Onlayn savdo platformasi kim uchun ishlaydi?",
+    "answer": "O'zi uchun, sotuvchi va xaridor - vosita"
+  },
+  {
+    "question": "\"Raqamli след\" nima?",
+    "answer": "Sizning butun onlayn hayotingiz"
+  },
+  {
+    "question": "Internetda \"nazorat\" kimda?",
+    "answer": "Platformalarda, foydalanuvchilarda emas"
+  },
+  {
+    "question": "\"Bepul\" antivirus qanday pul topadi?",
+    "answer": "Sizning ma'lumotlaringizni sotish orqali"
+  },
+  {
+    "question": "\"Onlayn shaxsiyat\" kimniki?",
+    "answer": "Platformaning, siz faqat ijaraga olasiz"
+  },
+  {
+    "question": "Internetdagi \"haqiqat\" nima?",
+    "answer": "Eng ko'p ko'rilgan narsa, eng to'g'ri emas"
+  },
+  {
+    "question": "\"Raqamli kelajak\" kim uchun qurilmoqda?",
+    "answer": "Texnologiya kompaniyalari uchun"
+  }
+]

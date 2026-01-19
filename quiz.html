@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilshunoslik Viktorinasi</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Tilshunoslik Viktorinasi</h1>
+            <p>Bilimingizni sinab ko'ring!</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="quiz-info">
+            <div class="question-counter">
+                <span id="currentQuestion">1</span> / <span id="totalQuestions">0</span>
+            </div>
+            <div class="timer-container">
+                <svg class="timer-ring" width="80" height="80">
+                    <circle class="timer-ring-circle" stroke="#e0e0e0" stroke-width="6" fill="transparent" r="32" cx="40" cy="40"/>
+                    <circle class="timer-ring-progress" stroke="#4caf50" stroke-width="6" fill="transparent" r="32" cx="40" cy="40"/>
+                </svg>
+                <div class="timer-text" id="timerText">15</div>
+            </div>
+            <div class="score">
+                Ball: <span id="score">0</span>
+            </div>
+        </div>
+
+        <div class="question-container" id="questionContainer">
+            <h2 id="questionText">Savol yuklanmoqda...</h2>
+        </div>
+
+        <div class="answer-container" id="answerContainer">
+            <div class="answer-box">
+                <p class="answer-label">To'g'ri javob:</p>
+                <p class="answer-text" id="answerText"></p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="startBtn" class="primary-btn">Viktorinani boshlash</button>
+            <button id="nextBtn" class="secondary-btn" style="display: none;">Keyingi savol</button>
+            <button id="restartBtn" class="primary-btn" style="display: none;">Qaytadan boshlash</button>
+        </div>
+
+        <div class="results-container" id="resultsContainer" style="display: none;">
+            <h2>Viktorina yakunlandi!</h2>
+            <div class="final-score">
+                <p>Sizning natijangiz:</p>
+                <h3 id="finalScore">0 / 0</h3>
+                <p id="scorePercentage"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Tilshunoslik Virtual Laboratoriyasi - Barcha huquqlar himoyalangan</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

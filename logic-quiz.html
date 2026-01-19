@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantiqiy Test - Zaynura</title>
+    <meta name="description" content="Zamonaviy hayotga asoslangan mantiqiy savollar - fikrlash qobiliyatingizni sinab ko'ring">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logic-quiz.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <div class="logo-section">
+                <div class="logo-icon">🧠</div>
+                <h1 class="main-title">Mantiqiy Test</h1>
+                <p class="subtitle">Zamonaviy hayotga asoslangan 60 ta savol</p>
+            </div>
+            
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">📝</div>
+                    <div class="info-content">
+                        <h3>60 Savol</h3>
+                        <p>Mantiqiy fikrlash</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⏱️</div>
+                    <div class="info-content">
+                        <h3>45 Daqiqa</h3>
+                        <p>Vaqt chegarasi</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎯</div>
+                    <div class="info-content">
+                        <h3>1 To'g'ri Javob</h3>
+                        <p>Har bir savol uchun</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="startQuiz()">
+                <span>Testni Boshlash</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="question-counter">Savol <span id="currentQuestion">1</span> / <span id="totalQuestions">60</span></span>
+                        <span class="progress-percentage" id="progressPercentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+                
+                <div class="timer-section">
+                    <div class="timer-icon">⏱️</div>
+                    <div class="timer-display" id="timer">45:00</div>
+                </div>
+            </div>
+
+            <div class="quiz-content">
+                <div class="question-card">
+                    <h2 class="question-text" id="questionText">Savol yuklanmoqda...</h2>
+                    
+                    <div class="options-grid" id="optionsGrid">
+                        <!-- Options will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="quiz-navigation">
+                    <button class="btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Oldingi</span>
+                    </button>
+                    
+                    <button class="btn-primary" id="nextBtn" onclick="nextQuestion()">
+                        <span id="nextBtnText">Keyingi</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <div class="results-container">
+                <div class="results-icon" id="resultsIcon">🎉</div>
+                <h1 class="results-title">Test Yakunlandi!</h1>
+                
+                <div class="score-display">
+                    <div class="score-circle">
+                        <svg class="score-ring" width="200" height="200">
+                            <circle class="score-ring-bg" cx="100" cy="100" r="85" />
+                            <circle class="score-ring-fill" id="scoreRing" cx="100" cy="100" r="85" />
+                        </svg>
+                        <div class="score-text">
+                            <div class="score-number" id="scoreNumber">0</div>
+                            <div class="score-label">/ 60</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-stats">
+                    <div class="stat-card correct">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="correctCount">0</div>
+                            <div class="stat-label">To'g'ri</div>
+                        </div>
+                    </div>
+                    <div class="stat-card wrong">
+                        <div class="stat-icon">❌</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="wrongCount">0</div>
+                            <div class="stat-label">Noto'g'ri</div>
+                        </div>
+                    </div>
+                    <div class="stat-card percentage">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="percentageScore">0%</div>
+                            <div class="stat-label">Natija</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-message" id="resultsMessage">
+                    <p>Ajoyib natija!</p>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn-secondary" onclick="showAnswers()">
+                        <span>Javoblarni Ko'rish</span>
+                    </button>
+                    <button class="btn-primary" onclick="restartQuiz()">
+                        <span>Qayta Boshlash</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C8.34315 16 6.84315 15.3284 5.75736 14.2426" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 14V10H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Screen -->
+        <div id="reviewScreen" class="screen">
+            <div class="review-header">
+                <h1>Javoblarni Ko'rib Chiqish</h1>
+                <button class="btn-secondary" onclick="backToResults()">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Orqaga</span>
+                </button>
+            </div>
+            
+            <div class="review-content" id="reviewContent">
+                <!-- Review items will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="logic-quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Agar siz ertalab soat 8:00 da uyqudan turdingiz va 45 daqiqa tayyorlandingiz, keyin 30 daqiqa yo'lda yurdingiz, qaysi vaqtda ishga yetib keldingiz?",
+    "options": ["8:45", "9:00", "9:15", "9:30"],
+    "correct": 2
+  },
+  {
+    "question": "Smartfoningiz batareyasi 20% qolganda ogohlantirish beradi. Agar to'liq zaryadlangan telefon 10 soat ishlasa, qancha vaqt qolgan?",
+    "options": ["1 soat", "2 soat", "3 soat", "4 soat"],
+    "correct": 1
+  },
+  {
+    "question": "Onlayn do'konda 50% chegirma bor. 80,000 so'mlik mahsulot qancha turadi?",
+    "options": ["30,000", "40,000", "50,000", "60,000"],
+    "correct": 1
+  },
+  {
+    "question": "Agar lift 3-qavatdan 8-qavatga 15 soniyada ko'tarilsa, 1-qavatdan 12-qavatga qancha vaqt ketadi?",
+    "options": ["27 soniya", "30 soniya", "33 soniya", "36 soniya"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 5 ta ijtimoiy tarmoqda bir xil paroldan foydalanasiz. Agar bittasi buzilsa, nechta hisobingiz xavf ostida?",
+    "options": ["1 ta", "4 ta", "5 ta", "Hech biri"],
+    "correct": 2
+  },
+  {
+    "question": "Agar taksi 1 km uchun 3,000 so'mdan hisoblasa va boshlang'ich to'lov 5,000 so'm bo'lsa, 7 km uchun qancha to'laysiz?",
+    "options": ["21,000", "26,000", "31,000", "36,000"],
+    "correct": 1
+  },
+  {
+    "question": "Siz kechqurun soat 23:00 da uxlaysiz va 7 soat uxlashingiz kerak. Qaysi vaqtda uyg'onish kerak?",
+    "options": ["5:00", "6:00", "7:00", "8:00"],
+    "correct": 1
+  },
+  {
+    "question": "Internetda 100 GB trafik bor. Kuniga 5 GB sarflasangiz, necha kunga yetadi?",
+    "options": ["15 kun", "20 kun", "25 kun", "30 kun"],
+    "correct": 1
+  },
+  {
+    "question": "Agar restoranda 3 kishi ovqat yeydi va umumiy hisob 150,000 so'm bo'lsa, har biri teng bo'lib to'lasa, qancha to'laydi?",
+    "options": ["40,000", "45,000", "50,000", "55,000"],
+    "correct": 2
+  },
+  {
+    "question": "Siz haftada 5 kun ishga borasiz va har kuni 2 soat yo'lda bo'lasiz. Oyiga (20 ish kuni) qancha vaqt yo'lda o'tkazasiz?",
+    "options": ["30 soat", "40 soat", "50 soat", "60 soat"],
+    "correct": 1
+  },
+  {
+    "question": "Agar telefon to'liq zaryadlanishi uchun 2 soat kerak bo'lsa va hozir 50% zaryadlangan bo'lsa, qancha vaqt kerak?",
+    "options": ["30 daqiqa", "45 daqiqa", "1 soat", "1.5 soat"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 10 ta elektron pochta xabarini o'qidingiz va 40 ta o'qilmagan qoldi. Jami nechta xabar bor edi?",
+    "options": ["30", "40", "50", "60"],
+    "correct": 2
+  },
+  {
+    "question": "Agar film 2 soat 15 daqiqa davom etsa va soat 19:30 da boshlansa, qachon tugaydi?",
+    "options": ["21:30", "21:45", "22:00", "22:15"],
+    "correct": 1
+  },
+  {
+    "question": "Siz oyiga 3,000,000 so'm ishlab topasiz va 40% ni ijaraga sarflaysiz. Qancha pul qoladi?",
+    "options": ["1,200,000", "1,500,000", "1,800,000", "2,000,000"],
+    "correct": 2
+  },
+  {
+    "question": "Agar avtomobil 100 km uchun 8 litr benzin sarflasa, 350 km uchun qancha kerak?",
+    "options": ["24 litr", "28 litr", "32 litr", "36 litr"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 30 daqiqalik video yuklamoqchisiz. Internet tezligi 5 MB/s. Agar video hajmi 900 MB bo'lsa, qancha vaqt ketadi?",
+    "options": ["2 daqiqa", "3 daqiqa", "4 daqiqa", "5 daqiqa"],
+    "correct": 1
+  },
+  {
+    "question": "Agar do'koningiz soat 9:00 dan 21:00 gacha ochiq bo'lsa va tushlik uchun 1 soat yopilsa, kuniga qancha soat ishlaydi?",
+    "options": ["10 soat", "11 soat", "12 soat", "13 soat"],
+    "correct": 1
+  },
+  {
+    "question": "Siz haftada 3 marta sport bilan shug'ullansangiz, yilda necha marta mashg'ulot qilasiz?",
+    "options": ["144", "156", "168", "180"],
+    "correct": 1
+  },
+  {
+    "question": "Agar mahsulot narxi 120,000 so'm bo'lib, 25% soliq qo'shilsa, yakuniy narx qancha?",
+    "options": ["130,000", "140,000", "150,000", "160,000"],
+    "correct": 2
+  },
+  {
+    "question": "Siz soat 14:00 da uchish uchun aeroportga borasiz. Agar 2 soat oldin borish kerak bo'lsa va yo'l 1 soat olsa, qachon uydan chiqish kerak?",
+    "options": ["10:00", "11:00", "12:00", "13:00"],
+    "correct": 1
+  },
+  {
+    "question": "Agar siz kuniga 2 litr suv ichsangiz, haftada qancha litr ichgan bo'lasiz?",
+    "options": ["10 litr", "12 litr", "14 litr", "16 litr"],
+    "correct": 2
+  },
+  {
+    "question": "Onlayn kursda 24 ta dars bor. Haftada 3 ta dars o'tsangiz, necha haftada tugatgan bo'lasiz?",
+    "options": ["6 hafta", "7 hafta", "8 hafta", "9 hafta"],
+    "correct": 2
+  },
+  {
+    "question": "Agar parkingda 1 soat 5,000 so'm tursa, 3 soat 30 daqiqa uchun qancha to'laysiz?",
+    "options": ["15,000", "17,500", "20,000", "22,500"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 500 ta Instagram postingizdan 50 tasini o'chirdingiz. Nechta post qoldi?",
+    "options": ["400", "450", "500", "550"],
+    "correct": 1
+  },
+  {
+    "question": "Agar telefon tarifingiz oyiga 100,000 so'm bo'lib, yillik to'lasangiz 20% chegirma bo'lsa, yilda qancha to'laysiz?",
+    "options": ["960,000", "1,000,000", "1,100,000", "1,200,000"],
+    "correct": 0
+  },
+  {
+    "question": "Siz ertalab 6:00 da uyg'onasiz va tunda 23:00 da uxlaysiz. Kun davomida qancha vaqt hushyorsiz?",
+    "options": ["15 soat", "16 soat", "17 soat", "18 soat"],
+    "correct": 2
+  },
+  {
+    "question": "Agar kitobda 300 bet bo'lib, kuniga 20 bet o'qisangiz, necha kunda tugatgan bo'lasiz?",
+    "options": ["12 kun", "15 kun", "18 kun", "20 kun"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 4 ta dasturni yuklab olmoqchisiz, har biri 250 MB. Jami qancha joy kerak?",
+    "options": ["500 MB", "750 MB", "1000 MB", "1250 MB"],
+    "correct": 2
+  },
+  {
+    "question": "Agar kafe soat 8:00 da ochilsa va siz 30 daqiqa oldin kelsangiz, qaysi vaqtda yetib kelgansiz?",
+    "options": ["7:00", "7:15", "7:30", "7:45"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 15 ta do'stingizga taklif yubordingiz, 10 tasi qabul qildi. Necha foiz qabul qildi?",
+    "options": ["50%", "60%", "66%", "75%"],
+    "correct": 2
+  },
+  {
+    "question": "Agar siz oyiga 500,000 so'm tejasangiz, yil oxirida qancha pul to'plagan bo'lasiz?",
+    "options": ["5,000,000", "6,000,000", "7,000,000", "8,000,000"],
+    "correct": 1
+  },
+  {
+    "question": "Zoom uchrashuvi 45 daqiqa davom etdi va soat 10:15 da boshlandi. Qachon tugadi?",
+    "options": ["10:45", "11:00", "11:15", "11:30"],
+    "correct": 1
+  },
+  {
+    "question": "Agar siz haftada 40 soat ishlasangiz va soatiga 25,000 so'm olsangiz, haftada qancha ishlab topasiz?",
+    "options": ["800,000", "900,000", "1,000,000", "1,100,000"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 200 GB bulutli xotiradan 75 GB ishlatgansiz. Qancha joy qoldi?",
+    "options": ["100 GB", "115 GB", "125 GB", "150 GB"],
+    "correct": 2
+  },
+  {
+    "question": "Agar piyoda 1 km ni 12 daqiqada bosib o'tsangiz, 5 km uchun qancha vaqt kerak?",
+    "options": ["45 daqiqa", "50 daqiqa", "1 soat", "1 soat 10 daqiqa"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 8 ta videoni ko'rmoqchisiz, har biri 25 daqiqa. Jami qancha vaqt ketadi?",
+    "options": ["2 soat", "2.5 soat", "3 soat", "3.5 soat"],
+    "correct": 3
+  },
+  {
+    "question": "Agar mahsulot 200,000 so'm bo'lib, 15% chegirma berilsa, qancha to'laysiz?",
+    "options": ["150,000", "160,000", "170,000", "180,000"],
+    "correct": 2
+  },
+  {
+    "question": "Siz soat 22:00 da uxlaysiz va 8 soat uxlaysiz. Qaysi vaqtda uyg'onasiz?",
+    "options": ["5:00", "6:00", "7:00", "8:00"],
+    "correct": 1
+  },
+  {
+    "question": "Agar guruhda 50 kishi bo'lib, 30% i ayollar bo'lsa, nechta ayol bor?",
+    "options": ["10", "15", "20", "25"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 12 ta notifikatsiyani o'chirib, 8 tasi qoldi. Jami nechta notifikatsiya bor edi?",
+    "options": ["16", "18", "20", "24"],
+    "correct": 2
+  },
+  {
+    "question": "Agar podcast 1 soat 20 daqiqa bo'lib, siz 35 daqiqasini tingladingiz bo'lsangiz, qancha qoldi?",
+    "options": ["40 daqiqa", "45 daqiqa", "50 daqiqa", "55 daqiqa"],
+    "correct": 1
+  },
+  {
+    "question": "Siz kuniga 3 ta qahva ichsangiz va har biri 15,000 so'm bo'lsa, oyiga (30 kun) qancha sarflaysiz?",
+    "options": ["1,200,000", "1,350,000", "1,500,000", "1,650,000"],
+    "correct": 1
+  },
+  {
+    "question": "Agar metro har 5 daqiqada kelsa va siz 2 daqiqa kechikib kelsangiz, qancha kutishingiz kerak?",
+    "options": ["2 daqiqa", "3 daqiqa", "4 daqiqa", "5 daqiqa"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 1000 ta elektron xat oldingiz va 60% ni spam deb belgiladingiz. Nechta spam xat bor?",
+    "options": ["400", "500", "600", "700"],
+    "correct": 2
+  },
+  {
+    "question": "Agar fitnes klubi oyiga 200,000 so'm bo'lib, 6 oylik to'lasangiz 10% chegirma bo'lsa, qancha to'laysiz?",
+    "options": ["1,080,000", "1,100,000", "1,200,000", "1,300,000"],
+    "correct": 0
+  },
+  {
+    "question": "Siz soat 7:00 da ishga borasiz va 9 soat ishlaysiz, 1 soat tushlik. Qachon uyga qaytasiz?",
+    "options": ["16:00", "17:00", "18:00", "19:00"],
+    "correct": 1
+  },
+  {
+    "question": "Agar telefoningizda 128 GB xotira bo'lib, 45 GB band bo'lsa, qancha bo'sh joy bor?",
+    "options": ["73 GB", "83 GB", "93 GB", "103 GB"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 20 ta rasmni yukladingiz, har biri 5 MB. Jami qancha joy egalladi?",
+    "options": ["80 MB", "90 MB", "100 MB", "110 MB"],
+    "correct": 2
+  },
+  {
+    "question": "Agar siz dushanba kuni bozorga bordingiz va har 4 kunda bir marta borishingiz kerak bo'lsa, keyingi safar qaysi kun borasiz?",
+    "options": ["Payshanba", "Juma", "Shanba", "Yakshanba"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 500,000 so'mlik xarid qildingiz va 5% cashback oldingiz. Qancha pul qaytdi?",
+    "options": ["20,000", "25,000", "30,000", "35,000"],
+    "correct": 1
+  },
+  {
+    "question": "Agar vebinar soat 18:00 da boshlanib 2.5 soat davom etsa, qachon tugaydi?",
+    "options": ["20:00", "20:30", "21:00", "21:30"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 60 ta do'stingizdan 15 tasi onlayn. Necha foiz onlayn?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "correct": 1
+  },
+  {
+    "question": "Agar siz oyiga 4 marta sartaroshxonaga borib, har safar 50,000 so'm to'lasangiz, yilda qancha sarflaysiz?",
+    "options": ["2,000,000", "2,200,000", "2,400,000", "2,600,000"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 10 GB faylni yuklamoqchisiz va 50% yuklandi. Qancha qoldi?",
+    "options": ["3 GB", "4 GB", "5 GB", "6 GB"],
+    "correct": 2
+  },
+  {
+    "question": "Agar siz soat 12:00 da tushlik qilsangiz va 45 daqiqa vaqtingiz bo'lsa, qachongacha qaytishingiz kerak?",
+    "options": ["12:30", "12:45", "13:00", "13:15"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 100 ta sahifani chop etishingiz kerak. Agar printer daqiqada 5 ta sahifa chop etsa, qancha vaqt ketadi?",
+    "options": ["15 daqiqa", "20 daqiqa", "25 daqiqa", "30 daqiqa"],
+    "correct": 1
+  },
+  {
+    "question": "Agar siz 300,000 so'mlik tovarni 3 oyga bo'lib to'lasangiz, oyiga qancha to'laysiz?",
+    "options": ["90,000", "100,000", "110,000", "120,000"],
+    "correct": 1
+  },
+  {
+    "question": "Siz 24 soatlik kun ichida 8 soat uxlaysiz. Qancha foiz uxlaysiz?",
+    "options": ["25%", "30%", "33%", "40%"],
+    "correct": 2
+  },
+  {
+    "question": "Agar siz haftada 2 marta kino ko'rsangiz va har biri 40,000 so'm bo'lsa, oyiga (4 hafta) qancha sarflaysiz?",
+    "options": ["280,000", "300,000", "320,000", "340,000"],
+    "correct": 2
+  },
+  {
+    "question": "Siz 15 ta ilovani o'rnatdingiz va 5 tasini o'chirdingiz. Nechta ilova qoldi?",
+    "options": ["5", "8", "10", "12"],
+    "correct": 2
+  }
+]
