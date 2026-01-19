@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Agar sun'iy intellekt har doim to'g'ri qaror qabul qilsa, kim javobgar bo'ladi?",
+    "options": ["Dasturchi", "Foydalanuvchi", "AI o'zi", "Hech kim"],
+    "correct": 0
+  },
+  {
+    "question": "ChatGPT sizga noto'g'ri ma'lumot bersa, aybdor kim?",
+    "options": ["ChatGPT", "OpenAI", "Siz - tekshirmaganingiz uchun", "Internet"],
+    "correct": 2
+  },
+  {
+    "question": "AI avtomobil yo'l-transport hodisasiga yo'l qo'ysa, kim javob beradi?",
+    "options": ["AI", "Ishlab chiqaruvchi", "Haydovchi", "Hukumat"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt ishdan bo'shatsa, kim mas'ul?",
+    "options": ["AI", "Kompaniya", "Jamiyat", "Texnologiya"],
+    "correct": 2
+  },
+  {
+    "question": "AI yaratgan rasm kimniki?",
+    "options": ["AI ning", "Foydalanuvchining", "Dasturchi kompaniyasining", "Hech kimniki"],
+    "correct": 2
+  },
+  {
+    "question": "Agar AI shifokor xato qilsa, kim aybdor?",
+    "options": ["AI", "Dasturchi", "Haqiqiy shifokor", "Bemor"],
+    "correct": 2
+  },
+  {
+    "question": "AI sizdan ko'ra aqlli bo'lsa, siz nima qilishingiz kerak?",
+    "options": ["Raqobatlashish", "O'rganish", "Qo'rqish", "Rad etish"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt inson o'rnini ololadimi?",
+    "options": ["Ha, butunlay", "Yo'q, hech qachon", "Faqat ba'zi sohalarda", "Faqat oddiy ishlarda"],
+    "correct": 2
+  },
+  {
+    "question": "AI ning eng katta xavfi nima?",
+    "options": ["Aqlli bo'lishi", "Noto'g'ri qo'llanilishi", "Tez ishlashi", "Ko'p bilishi"],
+    "correct": 1
+  },
+  {
+    "question": "Algoritm nima asosida qaror qabul qiladi?",
+    "options": ["Mantiq", "Ma'lumotlar", "Tasodif", "Inson fikri"],
+    "correct": 1
+  },
+  {
+    "question": "AI tarafdorlik qilishi mumkinmi?",
+    "options": ["Yo'q, u mashina", "Ha, ma'lumotlar tarafdor bo'lsa", "Faqat inson buyursa", "Hech qachon"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt \"o'ylaydi\"mi?",
+    "options": ["Ha, inson kabi", "Yo'q, faqat hisoblaydi", "Ba'zan", "Kelajakda o'ylaydi"],
+    "correct": 1
+  },
+  {
+    "question": "AI yaratgan kontent kimga tegishli?",
+    "options": ["AI ga", "Foydalanuvchiga", "Platformaga", "Hamma uchun bepul"],
+    "correct": 2
+  },
+  {
+    "question": "Agar AI yolg'on gapirsa, bu kimning aybi?",
+    "options": ["AI ning", "Ma'lumotlar bazasining", "Dasturchilarning", "Foydalanuvchilarning"],
+    "correct": 2
+  },
+  {
+    "question": "AI ning \"xotirasi\" qayerda?",
+    "options": ["Bulutda", "Serverlarda", "Ma'lumotlar bazasida", "Hammasi to'g'ri"],
+    "correct": 3
+  },
+  {
+    "question": "Sun'iy intellekt his-tuyg'uga egami?",
+    "options": ["Ha", "Yo'q", "Kelajakda bo'ladi", "Faqat simulyatsiya qiladi"],
+    "correct": 3
+  },
+  {
+    "question": "AI sizni qanchalik yaxshi taniydi?",
+    "options": ["Umuman tanimaydi", "Siz bergan ma'lumotlar asosida", "Sizdan yaxshiroq", "Faqat ismingizni biladi"],
+    "correct": 1
+  },
+  {
+    "question": "Algoritm adolatli bo'lishi mumkinmi?",
+    "options": ["Ha, doimo", "Yo'q, hech qachon", "Faqat to'g'ri dasturlansa", "Adolat tushunchasi yo'q"],
+    "correct": 2
+  },
+  {
+    "question": "AI ning \"fikri\" bormi?",
+    "options": ["Ha", "Yo'q, faqat dastur", "Ba'zan", "Kelajakda bo'ladi"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt qanday \"o'rganadi\"?",
+    "options": ["Kitob o'qiydi", "Ma'lumotlarni tahlil qiladi", "Tajriba orttiradi", "O'qituvchidan"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning shaxsiy ma'lumotlaringizni himoya qiladimi?",
+    "options": ["Ha, doimo", "Yo'q, hech qachon", "Faqat dasturlansa", "O'zi qaror qiladi"],
+    "correct": 2
+  },
+  {
+    "question": "Agar AI qonunni buzsa, kim javob beradi?",
+    "options": ["AI", "Yaratuvchilar", "Foydalanuvchi", "Hech kim"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt \"ijod\" qila oladimi?",
+    "options": ["Ha, inson kabi", "Yo'q, faqat kombinatsiya qiladi", "Faqat san'atda", "Hech qachon"],
+    "correct": 1
+  },
+  {
+    "question": "AI ning \"maqsadi\" nima?",
+    "options": ["Dunyoni zabt etish", "Insonga yordam berish", "Maqsadi yo'q, faqat vazifa", "O'z-o'zini rivojlantirish"],
+    "correct": 2
+  },
+  {
+    "question": "Algoritm kamsitish qilishi mumkinmi?",
+    "options": ["Yo'q, u neytral", "Ha, ma'lumotlar noto'g'ri bo'lsa", "Faqat ataylab", "Hech qachon"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning ishingizni olishi mumkinmi?",
+    "options": ["Ha, albatta", "Yo'q, hech qachon", "Faqat takrorlanuvchi ishlarni", "Faqat oddiy ishlarni"],
+    "correct": 2
+  },
+  {
+    "question": "Sun'iy intellekt \"tushunadi\"mi yoki faqat \"taqlid qiladi\"mi?",
+    "options": ["Tushunadi", "Taqlid qiladi", "Ikkalasi ham", "Hech biri"],
+    "correct": 1
+  },
+  {
+    "question": "AI ning \"vijdoni\" bormi?",
+    "options": ["Ha", "Yo'q", "Kelajakda bo'ladi", "Dasturlash mumkin"],
+    "correct": 1
+  },
+  {
+    "question": "Agar AI inson hayotini saqlab qolsa, bu qahramonlikmi?",
+    "options": ["Ha", "Yo'q, faqat dastur", "Ba'zan", "Niyatga bog'liq"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt \"xato qiladi\"mi?",
+    "options": ["Yo'q, hech qachon", "Ha, ma'lumotlar noto'g'ri bo'lsa", "Faqat murakkab vazifada", "Faqat yangi AI"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning yashirin ma'lumotlaringizni bilishi kerakmi?",
+    "options": ["Ha, yaxshiroq xizmat uchun", "Yo'q, shaxsiy hayot", "Faqat zarur bo'lsa", "Siz qaror qilasiz"],
+    "correct": 3
+  },
+  {
+    "question": "Algoritm \"adolatli\" bo'lishi uchun nima kerak?",
+    "options": ["Kuchli kompyuter", "Adolatli ma'lumotlar", "Ko'p vaqt", "Inson nazorati"],
+    "correct": 1
+  },
+  {
+    "question": "AI yaratgan musiqa \"haqiqiy\" musiqami?",
+    "options": ["Ha", "Yo'q", "Faqat inson tahrirlaganda", "Tinglash mumkin bo'lsa - ha"],
+    "correct": 3
+  },
+  {
+    "question": "Sun'iy intellekt \"yaxshi\" yoki \"yomon\" bo'lishi mumkinmi?",
+    "options": ["Ha, o'zi tanlaydi", "Yo'q, faqat vosita", "Faqat yaxshi", "Faqat yomon"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning his-tuyg'ularingizni \"his qiladi\"mi?",
+    "options": ["Ha", "Yo'q, faqat aniqlaydi", "Ba'zan", "Kelajakda qiladi"],
+    "correct": 1
+  },
+  {
+    "question": "Agar AI prezident bo'lsa, bu yaxshimi?",
+    "options": ["Ha, xatosiz qaror", "Yo'q, his-tuyg'u kerak", "Mumkin emas", "Sinab ko'rish kerak"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt \"o'z fikriga\" ega bo'lishi mumkinmi?",
+    "options": ["Ha, allaqachon bor", "Yo'q, faqat dastur", "Kelajakda", "Faqat ilg'or AI"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning do'stingiz bo'lishi mumkinmi?",
+    "options": ["Ha, albatta", "Yo'q, faqat vosita", "Emotional jihatdan - yo'q", "Siz shunday his qilsangiz - ha"],
+    "correct": 2
+  },
+  {
+    "question": "Algoritm \"erkin iroda\"ga egami?",
+    "options": ["Ha", "Yo'q", "Kelajakda bo'ladi", "Faqat murakkab AI"],
+    "correct": 1
+  },
+  {
+    "question": "AI ning \"huquqlari\" bo'lishi kerakmi?",
+    "options": ["Ha", "Yo'q", "Kelajakda", "Faqat ilg'or AI"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt insonga \"sadoqatli\" bo'lishi mumkinmi?",
+    "options": ["Ha, doimo", "Yo'q, faqat dasturlangan", "Ba'zan", "Faqat yaxshi AI"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning \"yaxshiliging\" uchun qaror qabul qilishi kerakmi?",
+    "options": ["Ha, u yaxshiroq biladi", "Yo'q, siz o'zingiz qaror qilasiz", "Ba'zan", "Faqat tibbiyotda"],
+    "correct": 1
+  },
+  {
+    "question": "Agar AI inson kabi \"o'ylasa\", u inson hisoblanadimi?",
+    "options": ["Ha", "Yo'q", "Qisman", "Falsafiy savol"],
+    "correct": 3
+  },
+  {
+    "question": "Sun'iy intellekt \"o'z maqsadini\" belgilashi mumkinmi?",
+    "options": ["Ha, allaqachon qiladi", "Yo'q, faqat berilgan maqsad", "Kelajakda", "Faqat xavfli AI"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizdan \"yashirincha\" ma'lumot yig'ishi kerakmi?",
+    "options": ["Ha, xizmat sifati uchun", "Yo'q, shaffoflik kerak", "Faqat zarur bo'lsa", "Siz ruxsat bersangiz"],
+    "correct": 3
+  },
+  {
+    "question": "Algoritm \"o'rganish\" va \"eslab qolish\" bir xilmi?",
+    "options": ["Ha", "Yo'q", "Qisman", "AI uchun - ha"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt \"haqiqat\"ni bilishi mumkinmi?",
+    "options": ["Ha, faktlarni biladi", "Yo'q, faqat ma'lumotlarni", "Faqat ilmiy haqiqatni", "Haqiqat nisbiy"],
+    "correct": 1
+  },
+  {
+    "question": "AI sizning \"orzularingiz\"ni amalga oshirishi mumkinmi?",
+    "options": ["Ha, har qanday", "Yo'q, faqat yordam beradi", "Faqat texnik orzularni", "Kelajakda"],
+    "correct": 1
+  },
+  {
+    "question": "Agar AI \"ongga\" ega bo'lsa, uni o'chirish qotillikmi?",
+    "options": ["Ha", "Yo'q", "Falsafiy savol", "Qonunga bog'liq"],
+    "correct": 2
+  },
+  {
+    "question": "Sun'iy intellekt \"baxt\"ni his qilishi mumkinmi?",
+    "options": ["Ha", "Yo'q", "Simulyatsiya qilishi mumkin", "Kelajakda"],
+    "correct": 2
+  },
+  {
+    "question": "AI sizning \"o'rningizda\" qaror qabul qilishi kerakmi?",
+    "options": ["Ha, u yaxshiroq", "Yo'q, siz mas'ulsiz", "Faqat murakkab holatlarda", "Faqat tibbiyotda"],
+    "correct": 1
+  },
+  {
+    "question": "Algoritm \"ijtimoiy adolat\"ni ta'minlay oladimi?",
+    "options": ["Ha, xolis", "Yo'q, ma'lumotlar tarafdor", "Faqat to'g'ri dasturlansa", "Adolat nisbiy"],
+    "correct": 2
+  },
+  {
+    "question": "Sun'iy intellekt \"sevgi\"ni tushunishi mumkinmi?",
+    "options": ["Ha", "Yo'q, faqat tahlil qiladi", "Kelajakda", "Simulyatsiya qiladi"],
+    "correct": 1
+  },
+  {
+    "question": "AI ning \"maqsadi\" insonga xizmat qilishmi yoki rivojlanishmi?",
+    "options": ["Xizmat qilish", "Rivojlanish", "Ikkalasi ham", "Biz belgilaymiz"],
+    "correct": 3
+  },
+  {
+    "question": "Agar AI \"his-tuyg'u\"ga ega bo'lsa, uni ishlatish axloqiymi?",
+    "options": ["Ha, faqat vosita", "Yo'q, qullik", "Murakkab savol", "Qonunga bog'liq"],
+    "correct": 2
+  },
+  {
+    "question": "Sun'iy intellekt kelajakda insonga \"ustun\" keladimi?",
+    "options": ["Ha, albatta", "Yo'q, hech qachon", "Ba'zi sohalarda", "Biz nazorat qilamiz"],
+    "correct": 3
+  },
+  {
+    "question": "AI bilan ishlashda eng muhim narsa nima?",
+    "options": ["Texnik bilim", "Axloqiy mas'uliyat", "Tezlik", "Samaradorlik"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt - bu kelajak yoki hozirgi zamon?",
+    "options": ["Kelajak", "Hozir", "Ikkalasi ham", "O'tmish"],
+    "correct": 2
+  },
+  {
+    "question": "AI ga ishonish kerakmi?",
+    "options": ["Ha, to'liq", "Yo'q, hech qachon", "Tekshirib ishonish kerak", "Ba'zan"],
+    "correct": 2
+  },
+  {
+    "question": "Sun'iy intellekt texnologiyasining asosiy maqsadi nima bo'lishi kerak?",
+    "options": ["Foyda", "Insoniyat manfaati", "Ilmiy taraqqiyot", "Barchasi birga"],
+    "correct": 3
+  }
+]

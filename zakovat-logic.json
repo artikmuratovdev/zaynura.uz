@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Dunyodagi eng qimmatli resurs nomi o'zgardi. Ilgari u neft edi, hozir esa...",
+    "options": ["Oltin", "Ma'lumotlar", "Suv", "Vaqt"],
+    "correct": 1
+  },
+  {
+    "question": "Algoritmlar bizni qanchalik yaxshi taniydi? Tadqiqotlarga ko'ra, 300 ta 'like'dan so'ng ular bizni kimdan yaxshiroq biladi?",
+    "options": ["O'zimizdan", "Do'stimizdan", "Turmush o'rtog'imizdan", "Ota-onamizdan"],
+    "correct": 2
+  },
+  {
+    "question": "Eynshteyn aytganidek: 'Mantiq sizni A nuqtadan B nuqtaga olib boradi, tasavvur esa...'",
+    "options": ["Hamma joyga", "Kelajakka", "Haqiqatga", "Muvaffaqiyatga"],
+    "correct": 0
+  },
+  {
+    "question": "Ijtimoiy tarmoqlarda biz ko'rayotgan 'bepul' kontentning haqiqiy narxi nima?",
+    "options": ["Internet trafigi", "Bizning e'tiborimiz", "Reklama to'lovi", "Smartfon narxi"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellekt tushunchasi paydo bo'lganidan beri qaysi o'yin uning ilk katta g'alabasi ramzi bo'ldi?",
+    "options": ["Shaxmat", "Go", "Poker", "Dota"],
+    "correct": 0
+  },
+  {
+    "question": "Dasturchilar orasida bir gap bor: 'Xatosiz kod yo'q, faqat...'",
+    "options": ["Yaxshi kod bor", "Topilmagan xatolar bor", "Tuzatilgan xatolar bor", "Murakkab kod bor"],
+    "correct": 1
+  },
+  {
+    "question": "Raqamli dunyoda 'V vaqt' tushunchasi nimani anglatadi?",
+    "options": ["Video vaqti", "Virus hujumi", "Haqiqiy vaqt", "Tanqidiy lahza"],
+    "correct": 2
+  },
+  {
+    "question": "Kognitiv psixologiyada 'Zaygarnik effekti' nima haqida?",
+    "options": ["Unutilgan tushlar", "Tugallanmagan ishlar xotirada yaxshi qolishi", "Ranglarni tanish", "Tez qaror qabul qilish"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi texnologiya 'Ishonchsizlik ustiga qurilgan ishonch' deb ataladi?",
+    "options": ["Cloud", "VPN", "Blockchain", "Anti-virus"],
+    "correct": 2
+  },
+  {
+    "question": "Zamonaviy jamiyatda 'FOMO' (Fear of Missing Out) nimadan qo'rqishni anglatadi?",
+    "options": ["Yolg'izlikdan", "Yangiliklardan orqada qolishdan", "Qorong'ulikdan", "Xato qilishdan"],
+    "correct": 1
+  },
+  {
+    "question": "Stiv Jobs ta'rificha, kompyuter - bu 'Miyaning ...'dir.",
+    "options": ["Kengaytmasi", "Velosipedi", "Ko'zgusi", "Dushmani"],
+    "correct": 1
+  },
+  {
+    "question": "Smartfonlar paydo bo'lgach, insoniyat qaysi qobiliyatini sezilarli darajada yo'qota boshladi?",
+    "options": ["Muloqot qilish", "Raqamlarni yodda saqlash", "Yurish", "Ranglarni ajratish"],
+    "correct": 1
+  },
+  {
+    "question": "Internetdagi 'Exo-kamera' (Echo-chamber) effekti nimaga olib keladi?",
+    "options": ["Ma'lumotlar ko'payishiga", "Bir xil fikrli insonlar orasida qolib ketishga", "Internet tezlashishiga", "Ovozli qidiruv yaxshilanishiga"],
+    "correct": 1
+  },
+  {
+    "question": "Sun'iy intellektning mashhur 'Tyuring testi' nima uchun o'tkaziladi?",
+    "options": ["Matematik hisob uchun", "Mashinaning ongliligini tekshirish uchun", "Tezlikni o'lchash uchun", "Xotirani sinash uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Kiberxavfsizlikda 'Eng zaif zanjir' har doim kim yoki nima?",
+    "options": ["Parol", "Server", "Inson", "Antivirus"],
+    "correct": 2
+  },
+  {
+    "question": "Dunyodagi ilk dasturchi ayol deb kim tan olingan?",
+    "options": ["Mari Kyuri", "Ada Lavleys", "Greys Xopper", "Mariya Tereza"],
+    "correct": 1
+  },
+  {
+    "question": "Zakovatda tez-tez uchraydi: 'Qora quti' ichida zamonaviy insonning 'uchinchi qo'li' bor. Bu nima?",
+    "options": ["Soat", "Smartfon", "Kalit", "Hamyon"],
+    "correct": 1
+  },
+  {
+    "question": "Nega ijtimoiy tarmoqlar moviy rangdan ko'p foydalanadi?",
+    "options": ["Chunki u eng arzon", "Chunki u xotirjamlik va ishonch hissini beradi", "Chunki u ko'zni charchatmaydi", "Chunki u eng mashhur rang"],
+    "correct": 1
+  },
+  {
+    "question": "Silicon Valley'da keng tarqalgan 'Fail Fast' tamoyili nimani uqtiradi?",
+    "options": ["Tez taslim bo'lishni", "Tez xato qilib, tajriba to'plashni", "Tez yugurishni", "Tez boyib ketishni"],
+    "correct": 1
+  },
+  {
+    "question": "Metaverse tushunchasi ilk bor qayerda paydo bo'lgan?",
+    "options": ["Facebook laboratoriyasida", "Ilmiy-fantastik romanda", "O'yinlarda", "NASA-da"],
+    "correct": 1
+  },
+  {
+    "question": "'Deepfake' texnologiyasining asosiy xavfi nimada?",
+    "options": ["Video sifatini buzishi", "Haqiqat va yolg'onni ajratib bo'lmay qolishi", "Internet tezligini pasaytirishi", "Xotirani to'ldirishi"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi tushuncha 'Raqamli o'lim' deb ataladi?",
+    "options": ["Telefon sinishi", "Internet o'chishi", "Akkauntlarning bloklanishi yoki o'chishi", "Akumulyator tugashi"],
+    "correct": 2
+  },
+  {
+    "question": "Bill Geytsning mashhur jumlasi: 'Kontent - bu ...'",
+    "options": ["Pul", "Podshoh", "Oltin", "Kelajak"],
+    "correct": 1
+  },
+  {
+    "question": "Nega yirik texnologik magnatlar farzandlariga gadjetlardan foydalanishni cheklab qo'yishadi?",
+    "options": ["Puli yo'qligi uchun", "Vaqti yo'qligi uchun", "Ularning addiktivligini bilishgani uchun", "Qizg'anchiqlikdan"],
+    "correct": 2
+  },
+  {
+    "question": "Inson miyasi va kompyuter o'rtasidagi asosiy farq nimada?",
+    "options": ["Tezlikda", "Xotira hajmida", "Kreativlik va hissiyotda", "Energiya sarfida"],
+    "correct": 2
+  },
+  {
+    "question": "Qidiruv tizimlari bizga ma'lumotni nima asosida tartiblab beradi?",
+    "options": ["Alifbo bo'yicha", "Sana bo'yicha", "Relevantlik va foydalilik bo'yicha", "Tasodifiy"],
+    "correct": 2
+  },
+  {
+    "question": "Psixologiyada 'Danning-Kryuger' effekti nimani tushuntiradi?",
+    "options": ["Ko'p bilgan odamning ishonchsizligini", "Kam bilgan odamning o'ziga haddan tashqari ishonchini", "Tez o'rganishni", "Unutuvchanlikni"],
+    "correct": 1
+  },
+  {
+    "question": "Nega onlayn do'konlarda narxlar '.99' bilan tugaydi?",
+    "options": ["Qaytim bermaslik uchun", "Psixologik arzon ko'rsatish uchun", "Hisoblash osonligi uchun", "Soliqlar tufayli"],
+    "correct": 1
+  },
+  {
+    "question": "'Aqlli shahar' (Smart City) konsepsiyasining markazida nima turadi?",
+    "options": ["Baland binolar", "Tezkor internet", "Ma'lumotlar tahlili va samaradorlik", "Elektromobillar"],
+    "correct": 2
+  },
+  {
+    "question": "Internetda 'O'rgimchak to'ri' deb nimaga aytiladi?",
+    "options": ["Viro'slarga", "Ijtimoiy tarmoqlarga", "World Wide Web (WWW)", "Darknetga"],
+    "correct": 2
+  },
+  {
+    "question": "Kelajakda eng talabgir ko'nikma (Soft Skill) nima bo'ladi?",
+    "options": ["Kodlash", "Matematika", "Moslashuvchanlik va tanqidiy fikrlash", "Yugurish"],
+    "correct": 2
+  },
+  {
+    "question": "Qaysi qurilma insonning 'Xotira protezi' deb atala boshladi?",
+    "options": ["Televizor", "Smartfon", "Kalkulyator", "Radio"],
+    "correct": 1
+  },
+  {
+    "question": "Zakovat mantiqida: 'U ko'rmaydi, lekin ko'rsatadi, gapirmaydi, lekin uqtiradi'. Bu nima?",
+    "options": ["Kitob", "Kompyuter", "Ko'zgu", "Xarita"],
+    "correct": 1
+  },
+  {
+    "question": "Raqamli gigiena nima?",
+    "options": ["Telefonni artish", "Internetdan foydalanish xavfsizligi va madaniyati", "Klaviatura tozalash", "Ko'zni asrash"],
+    "correct": 1
+  },
+  {
+    "question": "Algoritmik bias (tarafdorlik) qanday paydo bo'ladi?",
+    "options": ["Dasturchi yomonligi uchun", "Noto'g'ri o'qitish ma'lumotlari tufayli", "Tasodifan", "Viruslar tufayli"],
+    "correct": 1
+  },
+  {
+    "question": "Kelajakda inson va AI o'rtasidagi hamkorlik qanday ataladi?",
+    "options": ["Simbioz", "Urush", "Raqobat", "Inkor"],
+    "correct": 0
+  },
+  {
+    "question": "Ijtimoiy tarmoqlardagi 'Notifications' (Bildirishnomalar) qaysi gormonni uyg'otadi?",
+    "options": ["Adrenalin", "Dofamin", "Insulin", "Kortizol"],
+    "correct": 1
+  },
+  {
+    "question": "Dunyoga mashhur '404 Error' xabari nimani anglatadi?",
+    "options": ["Internet yo'q", "Sahifa topilmadi", "Parol noto'g'ri", "Server kuygan"],
+    "correct": 1
+  },
+  {
+    "question": "Nega 'Dark Mode' (Qora rejim) ommalashdi?",
+    "options": ["Chiroyli bo'lgani uchun", "Energiyani tejash va ko'zni charchatmaslik uchun", "Faqat tunda ishlatish uchun", "Xakerlik ramzi bo'lgani uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Kelajakda 'Raqamli shaxsiyat' nima bilan tasdiqlanadi?",
+    "options": ["Pasport bilan", "Biometrika va raqamli kalitlar bilan", "Imzo bilan", "Rasm bilan"],
+    "correct": 1
+  },
+  {
+    "question": "Insonning eng katta kognitiv xatosi nima?",
+    "options": ["Unutish", "O'zining to'g'riligiga haddan ortiq ishonish (Confirmation bias)", "Uxlash", "Tez gapirish"],
+    "correct": 1
+  },
+  {
+    "question": "Zakovatda savol: 'U bor joyda vaqt to'xtaydi, lekin hamma narsa yangilanadi'. Bu nima?",
+    "options": ["Muzey", "Kutubxona", "Internet", "Tush"],
+    "correct": 2
+  },
+  {
+    "question": "Sun'iy intellekt san'at asari Yaratsa, uning muallifi kim?",
+    "options": ["Robot", "Dasturchi va modelni yaratganlar", "Hech kim", "Sotib olgan odam"],
+    "correct": 1
+  },
+  {
+    "question": "'Gig Economy' tushunchasi nimani anglatadi?",
+    "options": ["Og'ir iqtisodiyot", "Freelance va qisqa muddatli ishlar tizimi", "Davlat iqtisodi", "Bank tizimi"],
+    "correct": 1
+  },
+  {
+    "question": "Nega virtual reallik (VR) ba'zi insonlarda ko'ngil aynishini keltirib chiqaradi?",
+    "options": ["Ranglar yomonligi uchun", "Ko'z va miya o'rtasidagi ma'lumot ziddiyati tufayli", "Ekran yaqinligi uchun", "Ovoz balandligi uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Texnologiya sohasida 'Unicorn' (Yagona shox) deb qaysi kompaniyalar ataladi?",
+    "options": ["Hayvonlar haqidagi", "Qiymati 1 milliard dollardan oshgan startaplar", "Davlat kompaniyalari", "Muvaffaqiyatsiz kompaniyalar"],
+    "correct": 1
+  },
+  {
+    "question": "Raqamli asrda 'Privacy' (Maxfiylik) haqiqatan bormi?",
+    "options": ["Ha", "Yo'q, u nisbiy tushunchaga aylandi", "Faqat boylarda bor", "Faqat oflayn odamlarda bor"],
+    "correct": 1
+  },
+  {
+    "question": "Nega yirik shaharlarda robot-kuryerlar sinovdan o'tkazilmoqda?",
+    "options": ["Chiroyli bo'lgani uchun", "Yetkazib berish xarajatlarini kamaytirish uchun", "Odamlar dangasa bo'lgani uchun", "Mashinalar ko'pligi uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Insonning texnologiyaga nisbatan eng katta qo'rquvi nima?",
+    "options": ["Elektr o'chishi", "Boshqaruvni yo'qotish", "Telefon sinishi", "Internet sekinlashishi"],
+    "correct": 1
+  },
+  {
+    "question": "Zakovat uslubida: 'U hammaning uyida bor, u orqali dunyoni ko'rish mumkin, lekin u ko'zgu emas'. Bu nima?",
+    "options": ["Deraza", "Monitor / Ekran", "Xarita", "Gazeta"],
+    "correct": 1
+  },
+  {
+    "question": "Raqamli minimalizm nima?",
+    "options": ["Kichik telefon ishlatish", "Faqat kerakli raqamli vositalardan maqsadli foydalanish", "Internetni o'chirish", "Ijtimoiy tarmoqlarni o'chirish"],
+    "correct": 1
+  },
+  {
+    "question": "Inson tafakkurining 'Avtopilot' rejimi nima?",
+    "options": ["Samolyot haydash", "O'ylamasdan qilinadigan odatiy harakatlar", "Chuqur o'ylash", "Orzu qilish"],
+    "correct": 1
+  },
+  {
+    "question": "Nega algoritmik tavsiyalar ba'zan bizga yoqmaydigan narsalarni ham ko'rsatadi?",
+    "options": ["Xatolik tufayli", "Bizning qiziqishlarimizni kengaytirish va yangi ma'lumot yig'ish uchun", "Bizni jahllantirish uchun", "Reklama beruvchi xohlagani uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Texnologik singulyarlik nima?",
+    "options": ["Yangi telefon modeli", "AI inson aqlidan o'zib ketadigan nuqta", "Internet butun dunyoni qamrab olishi", "Kosmik sayohat"],
+    "correct": 1
+  },
+  {
+    "question": "Raqamli dunyoda 'Brand' nima?",
+    "options": ["Faqat logo", "Ishonch va foydalanuvchi tajribasi", "Mahsulot nomi", "Reklama"],
+    "correct": 1
+  },
+  {
+    "question": "Inson aqli va sun'iy intellektning eng katta farqi nima deb hisoblanadi?",
+    "options": ["Mantiq", "Intuisiya va 'Common Sense' (Sog'lom fikr)", "Matematika", "Xotira"],
+    "correct": 1
+  },
+  {
+    "question": "Zakovat mantiqi: 'U xotirada qoladi, lekin uni ushlab bo'lmaydi, u nurdan tez, lekin harakatsiz'. Bu nima?",
+    "options": ["Tush", "Fikr", "Rasm", "Ovoz"],
+    "correct": 1
+  },
+  {
+    "question": "Nega zamonaviy ta'limda 'Umrbod o'rganish' (Lifelong Learning) zaruratga aylandi?",
+    "options": ["Vaqt ko'pligi uchun", "Bilimlar juda tez eskirayotgani uchun", "Diplomlar yaroqsizligi uchun", "Qiziq bo'lgani uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Raqamli asrda 'Haqiqat' qanday aniqlanadi?",
+    "options": ["Faqat ko'z bilan ko'rib", "Faktcheking va ishonchli manbalar orqali", "Hamma gapirsa", "Televizorda aytsa"],
+    "correct": 1
+  },
+  {
+    "question": "Insoniyatning raqamli kelajagi qanday bo'ladi?",
+    "options": ["Utopiya (juda yaxshi)", "Distopiya (juda yomon)", "Inson va texnologiya uyg'unligi", "Noma'lum"],
+    "correct": 2
+  }
+]

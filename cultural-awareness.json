@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Boshqa mamlakatda mehmon bo'lsangiz, birinchi nima qilishingiz kerak?",
+    "options": ["O'z odatlarimni davom ettirish", "Ularning odatlarini kuzatish va hurmat qilish", "Ularni o'z odatlarimga o'rgatish", "Hech narsaga ahamiyat bermaslik"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning an'anangiz boshqalarga g'alati tuyulsa, nima qilasiz?",
+    "options": ["Uyalaman", "Tushuntirishga harakat qilaman", "Rad etaman", "Yashiraman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning odatingizni tushunmasa, bu kimning muammosi?",
+    "options": ["Uning", "Mening", "Ikkalamizning - muloqot kerak", "Hech kimning"],
+    "correct": 2
+  },
+  {
+    "question": "\"Mening madaniyatim eng yaxshi\" deb o'ylash nima?",
+    "options": ["To'g'ri", "Noto'g'ri", "Normal", "Vatanparvarlik"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning taomini yoqtirmasangiz, nima qilasiz?",
+    "options": ["Yomon deb aytaman", "Hurmat bilan rad etaman", "Majburan yeyman", "Tanqid qilaman"],
+    "correct": 1
+  },
+  {
+    "question": "Zamonaviy texnologiya an'anaviy madaniyatni yo'q qiladimi?",
+    "options": ["Ha, albatta", "Yo'q, hech qachon", "Muvozanat kerak", "Texnologiya muhimroq"],
+    "correct": 2
+  },
+  {
+    "question": "Boshqa tildagi odamni tushunmasangiz, nima qilasiz?",
+    "options": ["Baland ovozda gapiraman", "Imo-ishora qilaman", "E'tibor bermayman", "Jahldor bo'laman"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning madaniyatingizda yaxshi narsa boshqasida yomon bo'lishi mumkinmi?",
+    "options": ["Yo'q, yaxshilik universal", "Ha, madaniyatga bog'liq", "Faqat ba'zi holatlarda", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa mamlakatda yashasangiz, nima qilishingiz kerak?",
+    "options": ["Butunlay o'zgarish", "O'z madaniyatimni saqlab, yangilarini o'rganish", "Hech narsa o'zgarmaslik", "Faqat o'z jamiyatim bilan muloqot qilish"],
+    "correct": 1
+  },
+  {
+    "question": "An'ana va zamonaviylik bir-biriga zidmi?",
+    "options": ["Ha, doimo", "Yo'q, birga yashashi mumkin", "An'ana muhimroq", "Zamonaviylik muhimroq"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning odatingizni tanqid qilsa, nima qilasiz?",
+    "options": ["Jahldor bo'laman", "Tushuntirishga harakat qilaman", "O'ch olaman", "Munosabatni uzaman"],
+    "correct": 1
+  },
+  {
+    "question": "Barcha madaniyatlar tengmi?",
+    "options": ["Yo'q, meniki yaxshiroq", "Ha, har biri o'ziga xos", "Yo'q, zamonaviyroq yaxshi", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning tilингizni hech kim bilmasa, nima his qilasiz?",
+    "options": ["Jahldor bo'laman", "Tushunaman, boshqa til o'rganaman", "Ularni ayblayman", "O'zimni yomon his qilaman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatni o'rganish nima uchun kerak?",
+    "options": ["Shart emas", "Hurmat va tushunish uchun", "Faqat sayohat uchun", "Moda uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning an'anangiz zamonaviy dunyoga mos kelmasa, nima qilasiz?",
+    "options": ["Butunlay tashlayman", "Mohiyatini saqlab, shaklini o'zgartiraman", "Hech narsa qilmayman", "Boshqalarni ayblayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning bayramini nishonlash mumkinmi?",
+    "options": ["Yo'q, faqat o'zimniki", "Ha, hurmat belgisi", "Faqat o'sha xalqdan bo'lsam", "Mumkin emas"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy farq muammo yaratadimi?",
+    "options": ["Ha, doimo", "Yo'q, boylik", "Faqat tushunmaslik bo'lsa", "Ha, shuning uchun bir xil bo'lish kerak"],
+    "correct": 2
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning odatingizni g'alati deb hisoblasa, nima qilasiz?",
+    "options": ["Xafa bo'laman", "Tushuntiraman", "Rad etaman", "Munosabatni uzaman"],
+    "correct": 1
+  },
+  {
+    "question": "Zamonaviy kiyim kiysangiz, an'anangizni yo'qotasizmi?",
+    "options": ["Ha", "Yo'q, an'ana kiyimda emas", "Ehtimol", "Kiyim muhim"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa tilda gaplashish sizning tilингizga xiyonatmi?",
+    "options": ["Ha", "Yo'q, ko'p til bilish boylik", "Ehtimol", "Faqat chet elda yashasa"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning madaniyatingizda yomon narsa boshqasida yaxshi bo'lishi mumkinmi?",
+    "options": ["Yo'q, yomonlik universal", "Ha, madaniyatga bog'liq", "Faqat ba'zi holatlarda", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning musiqasini tinglash mumkinmi?",
+    "options": ["Yo'q, faqat o'zimniki", "Ha, musiqa universal", "Faqat o'rganish uchun", "Yomon"],
+    "correct": 1
+  },
+  {
+    "question": "An'anani saqlab qolish uchun nima qilish kerak?",
+    "options": ["Hech narsa o'zgartirmaslik", "Keyingi avlodga o'rgatish va moslash", "Majburlash", "Qonun qabul qilish"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatni hurmat qilish nimani anglatadi?",
+    "options": ["Qabul qilish", "Tushunish va e'tirof etish", "Taqlid qilish", "Maqtash"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning madaniyatingiz o'zgaradimi?",
+    "options": ["Yo'q, hech qachon", "Ha, vaqt o'tishi bilan", "Faqat majburiy holda", "O'zgarmasligi kerak"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning taomini tayyorlash mumkinmi?",
+    "options": ["Yo'q, faqat o'zimniki", "Ha, madaniy almashish", "Faqat o'sha xalqdan bo'lsam", "Noto'g'ri"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy identifikatsiya va global fuqarolik bir-biriga zidmi?",
+    "options": ["Ha, doimo", "Yo'q, ikkalasi ham bo'lishi mumkin", "Faqat bittasi bo'lishi kerak", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning madaniyatingizni tanqid qilsa, nima qilasiz?",
+    "options": ["Jahldor bo'laman", "Sabab so'rayman va muhokama qilaman", "Rad etaman", "O'ch olaman"],
+    "correct": 1
+  },
+  {
+    "question": "An'anaviy kiyim kiyish zamonaviy dunyoda kerakmi?",
+    "options": ["Yo'q, eskirgan", "Ha, identifikatsiya uchun", "Faqat bayramlarda", "Majburiy"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning an'anasini o'rganish nima uchun foydali?",
+    "options": ["Foydasiz", "Tushunish va hurmat uchun", "Faqat qiziqish uchun", "Majburiyat"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy assimilyatsiya yaxshimi yoki yomonmi?",
+    "options": ["Yaxshi", "Yomon", "Majburiy bo'lsa yomon, ixtiyoriy bo'lsa normal", "Muhim emas"],
+    "correct": 2
+  },
+  {
+    "question": "Sizning tilингiz yo'qolib ketish xavfi ostida. Nima qilasiz?",
+    "options": ["Hech narsa", "Faol ravishda saqlab qolishga harakat qilaman", "Zamonaviy til o'rganaman", "Ahamiyat bermayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatni tushunish uchun nima kerak?",
+    "options": ["Faqat kitob o'qish", "Ochiq fikr va tajriba", "Hech narsa", "Faqat til bilish"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy stereotip doimo to'g'rimi?",
+    "options": ["Ha", "Yo'q, umumlashtirish xato", "Ko'pincha to'g'ri", "Ba'zan"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning diniga hurmat qilish kerakmi?",
+    "options": ["Yo'q, faqat o'zimniki to'g'ri", "Ha, har bir din hurmatga loyiq", "Faqat o'xshash dinlarga", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Zamonaviy texnologiya an'anaviy hunarmandchilikni almashtira oladimi?",
+    "options": ["Ha, butunlay", "Yo'q, ikkalasi ham kerak", "Texnologiya yaxshiroq", "An'ana yaxshiroq"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning madaniyatingizga qiziqsa, nima qilasiz?",
+    "options": ["Shubhalanaman", "Xursand bo'lib tushuntiraman", "E'tibor bermayman", "Rad etaman"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy xilma-xillik jamiyat uchun yaxshimi?",
+    "options": ["Yo'q, muammo yaratadi", "Ha, boylik", "Faqat kichik miqdorda", "Bir xillik yaxshiroq"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning an'anangiz boshqa xalqning an'anasiga o'xshasa, bu nima degani?",
+    "options": ["Kimdir nusxa ko'chirgan", "Umumiy inson tajribasi", "Tasodif", "Muammo"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa tilda o'ylash mumkinmi?",
+    "options": ["Yo'q, faqat ona tilida", "Ha, ko'p til bilsangiz", "Faqat chet elda yashasangiz", "Mumkin emas"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy identifikatsiyani yo'qotish xavfli mi?",
+    "options": ["Yo'q, muhim emas", "Ha, o'zingizni yo'qotasiz", "Ehtimol", "Zamonaviy dunyoda kerak emas"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning libosini kiyish mumkinmi?",
+    "options": ["Yo'q, noto'g'ri", "Ha, hurmat bilan", "Faqat o'sha xalqdan bo'lsam", "Yomon"],
+    "correct": 1
+  },
+  {
+    "question": "An'anaviy va zamonaviy ta'limni birlashtirish mumkinmi?",
+    "options": ["Yo'q, zid", "Ha, eng yaxshi yondashuv", "Faqat an'anaviy", "Faqat zamonaviy"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning madaniyatingizni noto'g'ri tushunsa, nima qilasiz?",
+    "options": ["Jahldor bo'laman", "To'g'ri tushuntirishga harakat qilaman", "E'tibor bermayman", "Munosabatni uzaman"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy moslashuv va o'z madaniyatini saqlab qolish bir vaqtda mumkinmi?",
+    "options": ["Yo'q", "Ha, muvozanat kerak", "Faqat bittasi", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning madaniyatingiz boshqasidan \"yaxshiroq\"mi?",
+    "options": ["Ha, albatta", "Yo'q, har biri o'ziga xos", "Ehtimol", "Zamonaviyroq yaxshiroq"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning she'riyatini o'qish mumkinmi?",
+    "options": ["Yo'q, faqat o'zimniki", "Ha, adabiyot universal", "Faqat tarjimada", "Yomon"],
+    "correct": 1
+  },
+  {
+    "question": "An'anani zamonaviy shaklda davom ettirish mumkinmi?",
+    "options": ["Yo'q, o'zgartirish mumkin emas", "Ha, mohiyatni saqlab", "Faqat eski shaklda", "An'ana o'zgarmasligi kerak"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatni o'rganish o'z madaniyatingizni yo'qotishmi?",
+    "options": ["Ha", "Yo'q, boyitadi", "Ehtimol", "Xavfli"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy farqni qabul qilish nimani anglatadi?",
+    "options": ["Rozi bo'lish", "Mavjudligini tan olish va hurmat qilish", "Yoqtirish", "Taqlid qilish"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning an'anangiz mantiqqa zid bo'lsa, nima qilasiz?",
+    "options": ["Baribir davom ettiraman", "Qayta o'ylayman", "Rad etaman", "Boshqalarni ayblayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning san'atini qadrlash mumkinmi?",
+    "options": ["Yo'q, faqat o'zimniki", "Ha, san'at universal", "Faqat o'xshash madaniyatda", "Yomon"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy evolyutsiya tabiiy jarayonmi?",
+    "options": ["Yo'q, madaniyat o'zgarmasligi kerak", "Ha, vaqt o'tishi bilan o'zgaradi", "Faqat majburiy holda", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatdagi odam sizning tilингizni o'rganishga harakat qilsa, nima qilasiz?",
+    "options": ["Shubhalanaman", "Yordam beraman va qo'llab-quvvatlayman", "E'tibor bermayman", "Kulaman"],
+    "correct": 1
+  },
+  {
+    "question": "An'ana va innovatsiya bir-biriga zidmi?",
+    "options": ["Ha, doimo", "Yo'q, birga bo'lishi mumkin", "Faqat an'ana", "Faqat innovatsiya"],
+    "correct": 1
+  },
+  {
+    "question": "Sizning madaniyatingiz kelajakda qanday bo'ladi?",
+    "options": ["Xuddi hozirgi kabi", "O'zgarib boradi", "Yo'qolib ketadi", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa xalqning falsafasini o'rganish mumkinmi?",
+    "options": ["Yo'q, faqat o'zimniki", "Ha, donolik universal", "Faqat o'xshash madaniyatda", "Yomon"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy identifikatsiya tug'ilishdan keladimi yoki o'rganiladi?",
+    "options": ["Faqat tug'ilishdan", "Ikkalasi ham - tug'ilish va o'rganish", "Faqat o'rganiladi", "Bilmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqa madaniyatni tushunish uchun eng muhim narsa nima?",
+    "options": ["Til bilish", "Ochiq fikr va hurmat", "Kitob o'qish", "O'sha mamlakatda yashash"],
+    "correct": 1
+  },
+  {
+    "question": "Madaniy meros kimga tegishli?",
+    "options": ["Faqat o'sha xalqqa", "Butun insoniyatga", "Faqat o'sha mamlakatga", "Hech kimga"],
+    "correct": 1
+  }
+]

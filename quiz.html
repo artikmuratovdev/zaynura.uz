@@ -4,64 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tilshunoslik Viktorinasi</title>
-    <link rel="stylesheet" href="quiz.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #818cf8;
+            --success-color: #22c55e;
+            --error-color: #ef4444;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: var(--card-background);
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 700px;
+            width: 95%;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            text-align: center;
+        }
+
+        h1 { color: var(--primary-color); margin-bottom: 0.5rem; }
+        .subtitle { color: #64748b; margin-bottom: 2rem; }
+
+        .quiz-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            background: #f8fafc;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+        }
+
+        .timer-container { position: relative; width: 64px; height: 64px; }
+        .timer-ring { transform: rotate(-90deg); }
+        .timer-ring-progress { stroke: var(--primary-color); stroke-linecap: round; transition: stroke-dashoffset 1s linear; }
+        .timer-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 800; }
+
+        .question-container {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        #questionText { font-size: 1.4rem; color: #1e293b; line-height: 1.5; margin: 0; }
+
+        .button-container { margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; }
+        
+        button.primary-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        button.primary-btn:hover { background: var(--secondary-color); transform: translateY(-1px); }
+
+        #resultsContainer { padding: 2rem 0; }
+        #finalScore { font-size: 3.5rem; color: var(--primary-color); font-weight: 800; margin: 0.5rem 0; }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Tilshunoslik Viktorinasi</h1>
-            <p>Bilimingizni sinab ko'ring!</p>
-        </div>
-    </header>
-    
     <div class="container">
-        <div class="quiz-info">
-            <div class="question-counter">
-                <span id="currentQuestion">1</span> / <span id="totalQuestions">0</span>
-            </div>
+        <h1>🗣️ Tilshunoslik</h1>
+        <p class="subtitle">Variantli test - To'g'ri javobni tanlang</p>
+
+        <div class="quiz-info" style="display: none;">
+            <div class="question-counter">Savol: <span id="currentQuestion">1</span> / <span id="totalQuestions">0</span></div>
             <div class="timer-container">
-                <svg class="timer-ring" width="80" height="80">
-                    <circle class="timer-ring-circle" stroke="#e0e0e0" stroke-width="6" fill="transparent" r="32" cx="40" cy="40"/>
-                    <circle class="timer-ring-progress" stroke="#4caf50" stroke-width="6" fill="transparent" r="32" cx="40" cy="40"/>
-                </svg>
+                <svg width="64" height="64"><circle class="timer-ring-progress" stroke-width="4" fill="transparent" r="30" cx="32" cy="32"/></svg>
                 <div class="timer-text" id="timerText">15</div>
             </div>
-            <div class="score">
-                Ball: <span id="score">0</span>
-            </div>
+            <div class="score">Ball: <span id="score">0</span></div>
         </div>
 
         <div class="question-container" id="questionContainer">
-            <h2 id="questionText">Savol yuklanmoqda...</h2>
+            <h2 id="questionText">Viktorinaga xush kelibsiz!</h2>
         </div>
 
-        <div class="answer-container" id="answerContainer">
-            <div class="answer-box">
-                <p class="answer-label">To'g'ri javob:</p>
-                <p class="answer-text" id="answerText"></p>
-            </div>
-        </div>
+        <!-- Options grid will be dynamically inserted here by JS -->
+        <div id="answerContainer"></div>
 
         <div class="button-container">
-            <button id="startBtn" class="primary-btn">Viktorinani boshlash</button>
-            <button id="nextBtn" class="secondary-btn" style="display: none;">Keyingi savol</button>
-            <button id="restartBtn" class="primary-btn" style="display: none;">Qaytadan boshlash</button>
+            <button id="startBtn" class="primary-btn"><i class="fas fa-play"></i> Boshlash</button>
+            <button id="nextBtn" class="primary-btn" style="display: none;">Keyingi savol <i class="fas fa-arrow-right"></i></button>
+            <button id="restartBtn" class="primary-btn" style="display: none;"><i class="fas fa-redo"></i> Qayta boshlash</button>
         </div>
 
-        <div class="results-container" id="resultsContainer" style="display: none;">
-            <h2>Viktorina yakunlandi!</h2>
-            <div class="final-score">
-                <p>Sizning natijangiz:</p>
-                <h3 id="finalScore">0 / 0</h3>
-                <p id="scorePercentage"></p>
-            </div>
+        <div id="resultsContainer" style="display: none;">
+            <h2>🎉 Yakunlandi!</h2>
+            <div id="finalScore">0 / 0</div>
+            <p id="scorePercentage"></p>
         </div>
     </div>
-
-    <footer>
-        <p>© 2025 Tilshunoslik Virtual Laboratoriyasi - Barcha huquqlar himoyalangan</p>
-    </footer>
-
     <script src="quiz.js"></script>
 </body>
 </html>

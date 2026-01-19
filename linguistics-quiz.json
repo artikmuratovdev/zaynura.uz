@@ -1,0 +1,107 @@
+[
+  {
+    "question": "Qaysi so'z barcha tillarda deyarli bir xil talaffuz qilinadi?",
+    "options": ["Salom", "Mama", "Kitob", "Rahmat"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z aytilganda, aytilayotgan narsaning o'zi sodir bo'ladi?",
+    "options": ["Jim!", "Gapir!", "Yugur!", "Ushla!"],
+    "correct": 0
+  },
+  {
+    "question": "Qaysi so'z qancha ko'p aytilsa, shuncha ma'nosini yo'qotadi?",
+    "options": ["Salom", "Kechirasiz", "Rahmat", "Yaxshi"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z savol ham, javob ham bo'la oladi?",
+    "options": ["Qachon?", "Nima?", "Qayerda?", "Qanday?"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z yozilganda uzun, aytilganda esa qisqa?",
+    "options": ["Qisqa", "Uzun", "Katta", "Kichik"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z aytilmasdan turib ham tushuniladi?",
+    "options": ["Rahmat", "Musiqa", "Ism", "Kitob"],
+    "correct": 0
+  },
+  {
+    "question": "Qaysi so'z barcha tillarda eng tez o'zgaradi?",
+    "options": ["Ilmiy so'zlar", "Salomlashuv so'zlari (slang)", "Sonlar", "Ranglar"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z odamni xafa ham, xursand ham qilishi mumkin?",
+    "options": ["Yolg'on", "To'g'ri", "Balki", "Hamma"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z gap bo'lmasdan ham gap vazifasini bajaradi?",
+    "options": ["Ha yoki Yo'q", "Va yoki Chunki", "Lekin", "Bilan"],
+    "correct": 0
+  },
+  {
+    "question": "Qaysi so'z yolg'on bo'lsa ham, ish bajariladi?",
+    "options": ["Ket", "Keling", "Tur", "Yot"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi til eng ko'p davlatlarda rasmiy til hisoblanadi?",
+    "options": ["Xitoy tili", "Ingliz tili", "Ispan tili", "Fransuz tili"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi tilda so'zlar o'ngdan chapga yoziladi?",
+    "options": ["Lotin", "Arab va ivrit tillari", "Kirill", "Ieroglif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi yozuv tizimida bitta belgi butun bir so'zni bildiradi?",
+    "options": ["Lotin", "Xitoy ierogliflari", "Arab", "Yunon"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi tilni bilmasdan ham uni tushunish mumkin?",
+    "options": ["Lotin tili", "Imo-ishora tili", "Arab tili", "Nemis tili"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi tilda eng qisqa gap ham to'liq ma'no beradi?",
+    "options": ["Xabar gaplar", "Buyruq gaplar (Kel!)", "So'roq gaplar", "His-hayajon gaplar"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi so'z dunyoning hamma joyida taniladi?",
+    "options": ["Hello", "OK", "Ciao", "Bye"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi til eng tez o'rganiladi deb hisoblanadi?",
+    "options": ["Ingliz", "Esperanto", "Xitoy", "Rus"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi tilda bitta so'z butun bir gap bo'la oladi?",
+    "options": ["Rus", "Turk va eskimos tillarida", "Ingliz", "Fransuz"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi tilda so'z ohangi ma'noni o'zgartiradi?",
+    "options": ["O'zbek", "Xitoy tilida", "Ingliz", "Arab"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi yozuvda harflar alohida emas, tutash yoziladi?",
+    "options": ["Lotin", "Arab yozuvi", "Kirill", "Yunon"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi gap aytilganda ko'pincha unga ishonilmaydi?",
+    "options": ["Bilaman", "Ishoning", "Ko'rdim", "Eshitdim"],
+    "correct": 1
+  }
+]

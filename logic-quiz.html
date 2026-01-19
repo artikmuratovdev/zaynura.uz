@@ -4,23 +4,314 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantiqiy Test - Zaynura</title>
-    <meta name="description" content="Zamonaviy hayotga asoslangan mantiqiy savollar - fikrlash qobiliyatingizni sinab ko'ring">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="logic-quiz.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #818cf8;
+            --success-color: #22c55e;
+            --error-color: #ef4444;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: var(--card-background);
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 700px;
+            width: 95%;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Screen Management */
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        /* Progress & Stats */
+        .progress-bar {
+            width: 100%;
+            height: 0.5rem;
+            background-color: #e2e8f0;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 0.25rem;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        /* Cards */
+        .info-cards {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-card {
+            background-color: #f8fafc;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .info-icon { font-size: 1.5rem; }
+        .info-content h3 { margin: 0; font-size: 1rem; color: var(--primary-color); }
+        .info-content p { margin: 0; font-size: 0.875rem; color: #64748b; }
+
+        .question-card {
+            background-color: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            color: #1e293b;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            line-height: 1.4;
+        }
+
+        /* Options */
+        .options-grid {
+            display: grid;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-btn {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            text-align: left;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--primary-color);
+            background-color: #f5f3ff;
+        }
+
+        .option-btn.selected {
+            border-color: var(--primary-color);
+            background-color: #eef2ff;
+        }
+
+        .option-letter {
+            font-weight: 700;
+            color: var(--primary-color);
+            background: #eef2ff;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        button.btn-primary, button.btn-secondary {
+            flex: 1;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-family: inherit;
+        }
+
+        button.btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        button.btn-primary:hover:not(:disabled) {
+            background-color: var(--secondary-color);
+        }
+
+        button.btn-secondary {
+            background-color: #64748b;
+            color: #fff;
+        }
+
+        button.btn-secondary:hover:not(:disabled) {
+            background-color: #475569;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Timer */
+        .timer-section {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary-color);
+        }
+
+        .timer-display.warning {
+            color: var(--error-color);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Results */
+        .results-container {
+            text-align: center;
+        }
+
+        .results-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+
+        .score-circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 8px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-number { font-size: 2.5rem; font-weight: 800; color: var(--primary-color); }
+        .score-label { font-size: 1rem; color: #64748b; }
+
+        .results-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-card {
+            background: #f8fafc;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+
+        .stat-value { font-weight: 700; color: var(--primary-color); display: block; }
+        .stat-label { font-size: 0.75rem; color: #64748b; }
+
+        /* Review */
+        .review-content {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .review-item {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: left;
+            border-left: 4px solid #e2e8f0;
+        }
+
+        .review-item.correct { border-left-color: var(--success-color); }
+        .review-item.wrong { border-left-color: var(--error-color); }
+
+        .review-question { font-weight: 600; margin-bottom: 0.5rem; display: block; }
+
+        .review-option {
+            font-size: 0.875rem;
+            padding: 0.4rem 0.75rem;
+            margin-top: 0.25rem;
+            border-radius: 0.25rem;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .review-option.correct-answer { background: #f0fdf4; border-color: var(--success-color); color: var(--success-color); }
+        .review-option.wrong-answer { background: #fef2f2; border-color: var(--error-color); color: var(--error-color); }
+
+        @media (max-width: 640px) {
+            body { padding: 1rem; }
+            .container { padding: 1.5rem; }
+            .results-stats { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    <div class="background-gradient"></div>
-    
     <div class="container">
         <!-- Start Screen -->
         <div id="startScreen" class="screen active">
-            <div class="logo-section">
-                <div class="logo-icon">🧠</div>
-                <h1 class="main-title">Mantiqiy Test</h1>
-                <p class="subtitle">Zamonaviy hayotga asoslangan 60 ta savol</p>
-            </div>
+            <h1>🧠 Mantiqiy Test</h1>
+            <p class="subtitle">Zamonaviy hayotga asoslangan 60 ta savol</p>
             
             <div class="info-cards">
                 <div class="info-card">
@@ -46,57 +337,37 @@
                 </div>
             </div>
             
-            <button class="btn-primary" onclick="startQuiz()">
-                <span>Testni Boshlash</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <button class="btn-primary" onclick="startQuiz()" style="width: 100%;">
+                Testni Boshlash <i class="fas fa-play"></i>
             </button>
         </div>
 
         <!-- Quiz Screen -->
         <div id="quizScreen" class="screen">
-            <div class="quiz-header">
-                <div class="progress-section">
-                    <div class="progress-info">
-                        <span class="question-counter">Savol <span id="currentQuestion">1</span> / <span id="totalQuestions">60</span></span>
-                        <span class="progress-percentage" id="progressPercentage">0%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill"></div>
-                    </div>
-                </div>
-                
-                <div class="timer-section">
-                    <div class="timer-icon">⏱️</div>
-                    <div class="timer-display" id="timer">45:00</div>
-                </div>
+            <div class="timer-section">
+                <span id="timer">45:00</span>
             </div>
 
-            <div class="quiz-content">
-                <div class="question-card">
-                    <h2 class="question-text" id="questionText">Savol yuklanmoqda...</h2>
-                    
-                    <div class="options-grid" id="optionsGrid">
-                        <!-- Options will be inserted here -->
-                    </div>
-                </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            
+            <div class="stats">
+                <span>Savol: <span id="currentQuestion">1</span> / <span id="totalQuestions">60</span></span>
+                <span id="progressPercentage">0%</span>
+            </div>
 
-                <div class="quiz-navigation">
-                    <button class="btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Oldingi</span>
-                    </button>
-                    
-                    <button class="btn-primary" id="nextBtn" onclick="nextQuestion()">
-                        <span id="nextBtnText">Keyingi</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
+            <div class="question-card" id="questionText">Savol yuklanmoqda...</div>
+            
+            <div class="options-grid" id="optionsGrid"></div>
+
+            <div class="button-group">
+                <button class="btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>
+                    <i class="fas fa-chevron-left"></i> Oldingi
+                </button>
+                <button class="btn-primary" id="nextBtn" onclick="nextQuestion()">
+                    <span id="nextBtnText">Keyingi</span> <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
 
@@ -104,82 +375,51 @@
         <div id="resultsScreen" class="screen">
             <div class="results-container">
                 <div class="results-icon" id="resultsIcon">🎉</div>
-                <h1 class="results-title">Test Yakunlandi!</h1>
+                <h1>Test Yakunlandi!</h1>
                 
-                <div class="score-display">
-                    <div class="score-circle">
-                        <svg class="score-ring" width="200" height="200">
-                            <circle class="score-ring-bg" cx="100" cy="100" r="85" />
-                            <circle class="score-ring-fill" id="scoreRing" cx="100" cy="100" r="85" />
-                        </svg>
-                        <div class="score-text">
-                            <div class="score-number" id="scoreNumber">0</div>
-                            <div class="score-label">/ 60</div>
-                        </div>
-                    </div>
+                <div class="score-circle">
+                    <div class="score-number" id="scoreNumber">0</div>
+                    <div class="score-label">ball</div>
+                    <!-- Hidden SVG ring for compatibility with JS animate function -->
+                    <svg style="position: absolute; width: 0; height: 0;">
+                        <circle id="scoreRing" />
+                    </svg>
                 </div>
 
                 <div class="results-stats">
-                    <div class="stat-card correct">
-                        <div class="stat-icon">✅</div>
-                        <div class="stat-content">
-                            <div class="stat-value" id="correctCount">0</div>
-                            <div class="stat-label">To'g'ri</div>
-                        </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="correctCount">0</span>
+                        <span class="stat-label">To'g'ri</span>
                     </div>
-                    <div class="stat-card wrong">
-                        <div class="stat-icon">❌</div>
-                        <div class="stat-content">
-                            <div class="stat-value" id="wrongCount">0</div>
-                            <div class="stat-label">Noto'g'ri</div>
-                        </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="wrongCount">0</span>
+                        <span class="stat-label">Noto'g'ri</span>
                     </div>
-                    <div class="stat-card percentage">
-                        <div class="stat-icon">📊</div>
-                        <div class="stat-content">
-                            <div class="stat-value" id="percentageScore">0%</div>
-                            <div class="stat-label">Natija</div>
-                        </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="percentageScore">0%</span>
+                        <span class="stat-label">Natija</span>
                     </div>
                 </div>
 
-                <div class="results-message" id="resultsMessage">
-                    <p>Ajoyib natija!</p>
-                </div>
+                <div id="resultsMessage" style="margin-bottom: 1.5rem; color: #64748b;"></div>
 
-                <div class="results-actions">
-                    <button class="btn-secondary" onclick="showAnswers()">
-                        <span>Javoblarni Ko'rish</span>
-                    </button>
-                    <button class="btn-primary" onclick="restartQuiz()">
-                        <span>Qayta Boshlash</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C8.34315 16 6.84315 15.3284 5.75736 14.2426" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M4 14V10H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="showAnswers()">Javoblar</button>
+                    <button class="btn-primary" onclick="restartQuiz()">Qayta</button>
                 </div>
             </div>
         </div>
 
         <!-- Review Screen -->
         <div id="reviewScreen" class="screen">
-            <div class="review-header">
-                <h1>Javoblarni Ko'rib Chiqish</h1>
-                <button class="btn-secondary" onclick="backToResults()">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Orqaga</span>
-                </button>
-            </div>
-            
-            <div class="review-content" id="reviewContent">
-                <!-- Review items will be inserted here -->
-            </div>
+            <h1>Javoblar</h1>
+            <div class="review-content" id="reviewContent"></div>
+            <button class="btn-secondary" onclick="backToResults()" style="margin-top: 1.5rem; width: 100%;">Orqaga</button>
         </div>
     </div>
 
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
     <script src="logic-quiz.js"></script>
 </body>
 </html>

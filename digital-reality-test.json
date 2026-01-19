@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Nega \"bepul\" ijtimoiy tarmoqlar mavjud?",
+    "options": ["Xayriya uchun", "Sizning ma'lumotlaringizni sotish uchun", "Texnologiyani rivojlantirish uchun", "Odamlarni baxtli qilish uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Google sizni qanday kuzatadi?",
+    "options": ["Faqat qidiruv orqali", "Faqat Gmail orqali", "Barcha Google xizmatlari orqali", "Umuman kuzatmaydi"],
+    "correct": 2
+  },
+  {
+    "question": "\"Incognito\" rejim nimani yashiradi?",
+    "options": ["Hamma narsani", "Faqat brauzer tarixini", "IP manzilingizni", "Joylashuvingizni"],
+    "correct": 1
+  },
+  {
+    "question": "Nega ilovalar doimo yangilanadi?",
+    "options": ["Faqat xatolarni tuzatish uchun", "Yangi funksiyalar qo'shish uchun", "Yangi kuzatuv mexanizmlari qo'shish uchun ham", "Foydalanuvchilarni bezovta qilish uchun"],
+    "correct": 2
+  },
+  {
+    "question": "Facebook asosiy daromadi qayerdan?",
+    "options": ["Obuna to'lovlari", "Reklama va ma'lumotlar", "Xayriya", "Davlat granti"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi parol eng xavfsiz?",
+    "options": ["123456", "parol123", "Qwerty2024", "aB3$xK9@mP2#"],
+    "correct": 3
+  },
+  {
+    "question": "\"Cookies\" nima qiladi?",
+    "options": ["Faqat saytni eslab qoladi", "Sizni butun internetda kuzatadi", "Faqat parolni saqlaydi", "Hech narsa qilmaydi"],
+    "correct": 1
+  },
+  {
+    "question": "Nega TikTok addiktiv?",
+    "options": ["Tasodif", "Algoritm maxsus shunday qilingan", "Video qisqa", "Musiqa yoqimli"],
+    "correct": 1
+  },
+  {
+    "question": "Bepul Wi-Fi da nima xavfli?",
+    "options": ["Sekin ishlaydi", "Ma'lumotlaringiz o'g'irlanishi mumkin", "Batareya tez tugaydi", "Hech narsa"],
+    "correct": 1
+  },
+  {
+    "question": "WhatsApp xabarlari shifrlangan, lekin Meta nimani ko'radi?",
+    "options": ["Hamma narsani", "Hech narsani", "Metadata va kontaktlar", "Faqat rasmlar"],
+    "correct": 2
+  },
+  {
+    "question": "Nega Instagram sizga aynan shu postlarni ko'rsatadi?",
+    "options": ["Tasodif", "Algoritm sizni o'rgangan", "Vaqt bo'yicha", "Eng yangilari"],
+    "correct": 1
+  },
+  {
+    "question": "\"Cloud\" xizmatda ma'lumotlar qayerda?",
+    "options": ["Bulutda", "Sizning telefoningizda", "Boshqa birovning serverida", "Havoda"],
+    "correct": 2
+  },
+  {
+    "question": "Qaysi biri eng xavfsiz?",
+    "options": ["Bir xil parol hamma joyda", "Har bir sayt uchun boshqa parol", "Oddiy parol", "Parolsiz"],
+    "correct": 1
+  },
+  {
+    "question": "Nega YouTube sizga doimiy video tavsiya qiladi?",
+    "options": ["Yordam berish uchun", "Sizni iloji boricha uzoqroq ushlab turish uchun", "Tasodif", "Eng yaxshi videolar"],
+    "correct": 1
+  },
+  {
+    "question": "Smartfoningiz sizni qachon tinglaydi?",
+    "options": ["Hech qachon", "Faqat qo'ng'iroq paytida", "Mikrofon ruxsati berilgan ilovalar doimo tinglashi mumkin", "Faqat tunda"],
+    "correct": 2
+  },
+  {
+    "question": "\"Shaxsiy ma'lumotlar himoyalangan\" degani nima?",
+    "options": ["Hech kim ko'rmaydi", "Faqat kompaniya ko'radi", "Hamma ko'radi", "Faqat siz ko'rasiz"],
+    "correct": 1
+  },
+  {
+    "question": "Nega onlayn do'konlar narxlarni o'zgartiradi?",
+    "options": ["Bozor talabi", "Sizning qidiruv tarixingizga qarab", "Tasodif", "Vaqt bo'yicha"],
+    "correct": 1
+  },
+  {
+    "question": "VPN nima qiladi?",
+    "options": ["Sizni butunlay yashiradi", "Faqat IP manzilingizni yashiradi", "Internetni tezlashtiradi", "Viruslardan himoya qiladi"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi ma'lumot eng qimmat?",
+    "options": ["Ismingiz", "Email manzilingiz", "Sizning xatti-harakatlaringiz va odatlaringiz", "Telefon raqamingiz"],
+    "correct": 2
+  },
+  {
+    "question": "\"Aqlli\" uy qurilmalari nimani yig'adi?",
+    "options": ["Faqat buyruqlarni", "Sizning butun hayot tarzingizni", "Hech narsani", "Faqat vaqtni"],
+    "correct": 1
+  },
+  {
+    "question": "Nega email bepul?",
+    "options": ["Xayriya", "Reklama va ma'lumotlar orqali daromad", "Davlat to'laydi", "Texnologiya arzon"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi biri mantiqan to'g'ri?",
+    "options": ["Agar bepul bo'lsa, mahsulot sizsiz", "Agar bepul bo'lsa, siz mahsulotsiz", "Hamma narsa bepul bo'lishi mumkin", "Bepul narsa yo'q"],
+    "correct": 0
+  },
+  {
+    "question": "Telegram \"maxfiy chat\" dan tashqari xabarlar qanday?",
+    "options": ["Butunlay shifrlangan", "Faqat transport darajasida shifrlangan", "Umuman shifrlanmagan", "Faqat rasmlar shifrlangan"],
+    "correct": 1
+  },
+  {
+    "question": "Nega push bildirishnomalar kerak?",
+    "options": ["Sizga xizmat ko'rsatish uchun", "Sizni doimiy ilovaga qaytarish uchun", "Texnik talab", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Biometrik ma'lumotlar (barmoq izi) qanday xavfli?",
+    "options": ["Xavfli emas", "Bir marta o'g'irlansa, abadiy o'g'irlangan", "Faqat telefonlar uchun xavfli", "Hech qachon o'g'irlanmaydi"],
+    "correct": 1
+  },
+  {
+    "question": "\"Lokatsiya o'chirilgan\" degani nima?",
+    "options": ["Hech kim bilmaydi", "Faqat ilovalar bilmaydi, operator biladi", "Faqat Google bilmaydi", "Hamma biladi"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi xizmat eng ko'p ma'lumot yig'adi?",
+    "options": ["Email", "Ijtimoiy tarmoq", "Qidiruv tizimi", "Hammasi deyarli bir xil"],
+    "correct": 3
+  },
+  {
+    "question": "Nega \"Foydalanish shartlari\" juda uzun?",
+    "options": ["Qonuniy talab", "Hech kim o'qimasin deb", "Batafsil tushuntirish uchun", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Internetda \"o'chirilgan\" ma'lumot qayerga ketadi?",
+    "options": ["Butunlay yo'qoladi", "Arxivda qoladi", "Faqat sizda o'chiriladi", "Hech qayerga ketmaydi"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi parol strategiyasi eng yaxshi?",
+    "options": ["Bir xil parol", "Oddiy parollar", "Parol menejeri va murakkab parollar", "Parolsiz"],
+    "correct": 2
+  },
+  {
+    "question": "\"Shaxsiylashtirish\" kimga foyda keltiradi?",
+    "options": ["Faqat sizga", "Faqat kompaniyaga", "Ikkalasiga ham, lekin ko'proq kompaniyaga", "Hech kimga"],
+    "correct": 2
+  },
+  {
+    "question": "Nega onlayn testlar bepul?",
+    "options": ["Xayriya", "Sizning psixologik profilingizni yaratish uchun", "Ta'lim uchun", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi ma'lumot eng xavfli?",
+    "options": ["Ismingiz", "Tug'ilgan kuningiz", "Sizning kundalik harakatlaringiz", "Telefon raqamingiz"],
+    "correct": 2
+  },
+  {
+    "question": "\"Anonim\" internetda bo'lish mumkinmi?",
+    "options": ["Ha, oson", "Yo'q, deyarli mumkin emas", "Faqat VPN bilan", "Faqat Tor bilan"],
+    "correct": 1
+  },
+  {
+    "question": "Nega ijtimoiy tarmoqlar \"scroll\" ni cheksiz qilgan?",
+    "options": ["Qulaylik uchun", "Sizni addiktiv holatga keltirish uchun", "Texnik sabab", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi biri to'g'ri?",
+    "options": ["Internetda shaxsiy hayot bor", "Internetda shaxsiy hayot yo'q", "Faqat VPN bilan shaxsiy hayot bor", "Faqat maxfiy brauzerlarda"],
+    "correct": 1
+  },
+  {
+    "question": "\"Bepul\" antivirus qanday pul topadi?",
+    "options": ["Xayriya", "Premium versiya", "Ma'lumotlaringizni sotish orqali", "Reklama va ma'lumotlar"],
+    "correct": 3
+  },
+  {
+    "question": "Nega platformalar \"algoritmni o'zgartirdi\" deydi?",
+    "options": ["Haqiqatan o'zgardi", "Foydalanuvchilarni aybdor qilish uchun", "Texnik muammo", "Yangi funksiya"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi xizmat eng xavfsiz?",
+    "options": ["Bepul email", "Pullik, shifrlangan email", "Ijtimoiy tarmoq email", "Hamma bir xil"],
+    "correct": 1
+  },
+  {
+    "question": "\"Raqamli след\" nima?",
+    "options": ["Faqat qidiruv tarixi", "Internetdagi barcha harakatlaringiz", "Faqat ijtimoiy tarmoqdagi postlar", "Hech narsa"],
+    "correct": 1
+  },
+  {
+    "question": "Nega kompaniyalar \"ma'lumotlar buzildi\" deb xabar beradi?",
+    "options": ["Halollik uchun", "Qonuniy majburiyat", "Reklama uchun", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi autentifikatsiya eng xavfsiz?",
+    "options": ["Faqat parol", "Parol + SMS", "Parol + autentifikator ilova", "Faqat barmoq izi"],
+    "correct": 2
+  },
+  {
+    "question": "\"Bulutda\" ma'lumotlar kimniki?",
+    "options": ["Sizniki", "Kompaniyaning", "Ikkalasining ham", "Hech kimniki"],
+    "correct": 2
+  },
+  {
+    "question": "Nega onlayn o'yinlar \"bepul\"?",
+    "options": ["Xayriya", "Mikrotransaksiyalar va ma'lumotlar", "Reklama", "Hammasi to'g'ri"],
+    "correct": 3
+  },
+  {
+    "question": "Qaysi biri mantiqan to'g'ri?",
+    "options": ["Texnologiya neytral", "Texnologiya qanday ishlatilishiga bog'liq", "Texnologiya doimo yaxshi", "Texnologiya doimo yomon"],
+    "correct": 1
+  },
+  {
+    "question": "\"Qidiruv tarixi o'chirilgan\" degani nima?",
+    "options": ["Butunlay o'chirilgan", "Faqat sizning qurilmangizda o'chirilgan", "Faqat Google da o'chirilgan", "Hech qayerda o'chirilmagan"],
+    "correct": 1
+  },
+  {
+    "question": "Nega \"Cookies qabul qiling\" tugmasi bor?",
+    "options": ["Texnik talab", "Qonuniy talab (GDPR)", "Kompaniya xohlaydi", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi ma'lumot eng qimmatli?",
+    "options": ["Ism", "Email", "Xatti-harakatlar va qiziqishlar", "Telefon"],
+    "correct": 2
+  },
+  {
+    "question": "\"Aqlli\" soat nima haqida xabar beradi?",
+    "options": ["Faqat vaqt", "Faqat qadamlar", "Sog'lik, joylashuv va odatlar", "Hech narsa"],
+    "correct": 2
+  },
+  {
+    "question": "Nega platformalar \"community guidelines\" ni o'zgartiradi?",
+    "options": ["Foydalanuvchilar uchun", "O'z manfaatlari uchun", "Qonun talabi", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi xabar eng xavfsiz?",
+    "options": ["SMS", "Email", "End-to-end shifrlangan messenger", "Ijtimoiy tarmoq DM"],
+    "correct": 2
+  },
+  {
+    "question": "\"Tavsiya etilgan\" kontent kim uchun?",
+    "options": ["Siz uchun", "Platformaning daromadi uchun", "Ikkalasi uchun", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Nega \"Bepul sinov\" keyin to'lovli bo'ladi?",
+    "options": ["Aldash uchun", "Biznes modeli", "Texnik sabab", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi biri to'g'ri?",
+    "options": ["Internetda hamma narsa bepul bo'lishi kerak", "Bepul xizmatlar ma'lumotlar bilan to'lanadi", "Hamma narsa pullik bo'lishi kerak", "Hech narsa to'lanmaydi"],
+    "correct": 1
+  },
+  {
+    "question": "\"Raqamli detoks\" nima uchun kerak?",
+    "options": ["Moda", "Texnologiya addiktsiyasini kamaytirish uchun", "Vaqtni behuda o'tkazish", "Zarur emas"],
+    "correct": 1
+  },
+  {
+    "question": "Nega onlayn platformalar \"engagement\" ni o'lchaydi?",
+    "options": ["Foydalanuvchi baxtini bilish uchun", "Daromadni oshirish uchun", "Texnik sabab", "Tasodif"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi biri eng muhim?",
+    "options": ["Ko'p follower", "Haqiqiy aloqalar", "Ko'p like", "Ko'p post"],
+    "correct": 1
+  },
+  {
+    "question": "\"Screen time\" ni cheklash kerakmi?",
+    "options": ["Yo'q, zarur emas", "Ha, sog'liq uchun", "Faqat bolalar uchun", "Faqat kattalar uchun"],
+    "correct": 1
+  },
+  {
+    "question": "Nega raqamli savodxonlik muhim?",
+    "options": ["Moda", "Zamonaviy dunyoda yashash uchun zarur", "Faqat dasturchilar uchun", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Qaysi biri mantiqan to'g'ri?",
+    "options": ["Texnologiya muammolarni hal qiladi", "Texnologiya vosita, hal qiluvchi inson", "Texnologiya muammolarni yaratadi", "Texnologiya neytral"],
+    "correct": 1
+  }
+]

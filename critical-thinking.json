@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Siz 100,000 so'm topib qoldingiz. Nima qilasiz?",
+    "options": ["Darhol sarflash", "Egasini topishga harakat qilish", "Yarmini qaytarish, yarmini olish", "Politsiyaga topshirish"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning fikri bir xil bo'lsa, siz nima qilasiz?",
+    "options": ["Ularga qo'shilaman", "O'z fikrimi aytaman", "Jim turaman", "Keyinroq o'ylayman"],
+    "correct": 1
+  },
+  {
+    "question": "Biror narsa juda arzon bo'lsa, birinchi xayolingiz nima?",
+    "options": ["Omad keldi!", "Nima uchun arzon?", "Tez sotib olish kerak", "Chegirma bo'lsa kerak"],
+    "correct": 1
+  },
+  {
+    "question": "Do'stingiz sizga yolg'on gapirayotganini sezdingiz. Nima qilasiz?",
+    "options": ["Darhol aytaman", "Jim turaman", "Sabab so'rayman", "Munosabatni uzaman"],
+    "correct": 2
+  },
+  {
+    "question": "Siz muhim qaror qabul qilishingiz kerak. Birinchi nima qilasiz?",
+    "options": ["Tezda qaror qilaman", "Boshqalardan so'rayman", "Ma'lumot to'playman", "Sezgimga ishonayman"],
+    "correct": 2
+  },
+  {
+    "question": "Hammaning qilayotgan ishini siz ham qilishingiz kerakmi?",
+    "options": ["Ha, hamma qilsa to'g'ri", "Yo'q, o'zim qaror qilaman", "Ko'pchilik doimo to'g'ri", "Vaziyatga bog'liq"],
+    "correct": 3
+  },
+  {
+    "question": "Biror narsani yaxshi ko'rsangiz, uning kamchiligini ko'rasizmi?",
+    "options": ["Yo'q, faqat yaxshi tomonini", "Ha, ikkalasini ham", "Kamchilik qidirmayman", "Vaqt o'tsa ko'raman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz xato qilganingizni tushundingiz. Nima qilasiz?",
+    "options": ["Yashiraman", "Tan olaman", "Boshqalarni ayblayman", "Unutishga harakat qilaman"],
+    "correct": 1
+  },
+  {
+    "question": "Biror narsa \"hammaga ma'lum\" deyilsa, tekshirasizmi?",
+    "options": ["Yo'q, hammaga ma'lum bo'lsa to'g'ri", "Ha, o'zim tekshiraman", "Ishonaman", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsaga ko'p pul sarfladingiz va u yoqmadi. Nima qilasiz?",
+    "options": ["Davom etaman, pul ketdi-ku", "To'xtataman", "O'zimni aldayman - yaxshi deb", "Boshqalarga aytmayman"],
+    "correct": 1
+  },
+  {
+    "question": "Birinchi taassurot doimo to'g'rimi?",
+    "options": ["Ha, doimo", "Yo'q, aldanish mumkin", "Ko'pincha to'g'ri", "Odamga bog'liq"],
+    "correct": 1
+  },
+  {
+    "question": "Siz muvaffaqiyatga erishdingiz. Sababi nima?",
+    "options": ["Faqat omad", "Faqat mehnatim", "Mehnat va omad", "Boshqalar yordam berdi"],
+    "correct": 2
+  },
+  {
+    "question": "Siz muvaffaqiyatsizlikka uchrадingiz. Sababi nima?",
+    "options": ["Faqat omadsizlik", "Mening xatom", "Boshqalarning aybi", "Vaziyat yomon edi"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning qilayotgan ishini qilmasangiz, noto'g'ri qilyapsizmi?",
+    "options": ["Ha, ko'pchilik to'g'ri", "Yo'q, o'zim bilaman", "Ehtimol", "Vaziyatga qarab"],
+    "correct": 3
+  },
+  {
+    "question": "Siz biror narsani juda yaxshi bilasiz deb o'ylaysiz. Bu xavflimi?",
+    "options": ["Yo'q, bilim yaxshi", "Ha, haddan oshgan ishonch xavfli", "Bilim hech qachon xavfli emas", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqalar sizning fikringizni qo'llab-quvvatlasa, bu nima degani?",
+    "options": ["Men to'g'riman", "Ular ham xato qilishi mumkin", "Ko'pchilik to'g'ri", "Ishonch hosil qildi"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsaga ishonasiz, lekin dalil yo'q. Nima qilasiz?",
+    "options": ["Baribir ishonaman", "Dalil qidiraman", "Boshqalardan so'rayman", "Unutaman"],
+    "correct": 1
+  },
+  {
+    "question": "Yangilik \"ilmiy tadqiqot ko'rsatdi\" deb boshlansa, ishonasizmi?",
+    "options": ["Ha, ilmiy-ku", "Yo'q, manba tekshiraman", "Ehtimol to'g'ri", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Siz qimmat narsa sotib oldingiz. Keyin arzonroq topdingiz. Nima his qilasiz?",
+    "options": ["Hech narsa", "Afsuslanaman", "O'zimni aldayman - meniki yaxshiroq", "Qaytarib beraman"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning yoqtirgan narsasini siz yoqtirmasangiz, muammo bormi?",
+    "options": ["Ha, men g'alati ekanman", "Yo'q, bu normal", "Ehtimol noto'g'ri tushunganman", "O'zimni o'zgartirish kerak"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror ishni boshladingiz va qiyin ekan. Nima qilasiz?",
+    "options": ["Darhol to'xtataman", "Davom etaman", "Boshqa yo'l qidiraman", "Yordam so'rayman"],
+    "correct": 2
+  },
+  {
+    "question": "Boshqalar sizni tanqid qilsa, nima qilasiz?",
+    "options": ["Jahldor bo'laman", "Tinglayman va o'ylayman", "Rad etaman", "O'ch olaman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani bilmasligingizni tan olasizmi?",
+    "options": ["Yo'q, uyat", "Ha, bu normal", "Yashirishga harakat qilaman", "Bilgandek ko'rsataman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror fikrni uzoq vaqt ushlab turdingiz. Endi noto'g'ri ekani ma'lum bo'ldi. Nima qilasiz?",
+    "options": ["Baribir davom etaman", "O'zgartirishga tayyor", "Qisman o'zgartiraman", "Boshqalarni ayblayman"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning qo'rqqan narsasidan siz qo'rqmasangiz, bu nima degani?",
+    "options": ["Men jasurman", "Men xavfni tushunmayapman", "Ular ortiqcha qo'rqishyapti", "Vaziyatga bog'liq"],
+    "correct": 3
+  },
+  {
+    "question": "Siz biror narsani juda istaysiz. Lekin bu sizga yomon. Nima qilasiz?",
+    "options": ["Baribir olaman", "Voz kechaman", "Oz miqdorda olaman", "Keyinroq o'ylayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqalar sizning qaroringizni yoqtirmasa, o'zgartirasizmi?",
+    "options": ["Ha, darhol", "Yo'q, o'zim bilaman", "Ularning sababini tinglayman", "Ehtimol"],
+    "correct": 2
+  },
+  {
+    "question": "Siz biror narsani \"his qilasiz\". Bu dalilmi?",
+    "options": ["Ha, his hech qachon aldamaydi", "Yo'q, his dalil emas", "Ba'zan to'g'ri", "Odamga bog'liq"],
+    "correct": 1
+  },
+  {
+    "question": "Siz muvaffaqiyatli odamni ko'rdingiz. Nima o'ylaysiz?",
+    "options": ["Omadi kelgan", "Mehnat qilgan", "Aloqalari bor", "Mehnat va omad"],
+    "correct": 3
+  },
+  {
+    "question": "Siz biror narsani qilishni rejalashtirdingiz, lekin qo'rqasiz. Nima qilasiz?",
+    "options": ["Voz kechaman", "Qo'rquvni yengaman", "Keyinroq qilaman", "Boshqalardan yordam so'rayman"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning ishongan narsasiga siz ishonmasangiz, kim noto'g'ri?",
+    "options": ["Men", "Ular", "Hech kim, fikr erkin", "Ko'pchilik to'g'ri"],
+    "correct": 2
+  },
+  {
+    "question": "Siz biror narsani tez qilishingiz kerak. Qanday qaror qilasiz?",
+    "options": ["Birinchi fikrimga amal qilaman", "Tez tahlil qilaman", "Boshqalardan so'rayman", "Kechiktiraman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz xato qilganingizni bilasiz, lekin hech kim bilmaydi. Nima qilasiz?",
+    "options": ["Yashiraman", "Tan olaman", "Tuzataman va aytmayman", "Unutaman"],
+    "correct": 2
+  },
+  {
+    "question": "Boshqalar sizni noto'g'ri tushunsa, nima qilasiz?",
+    "options": ["Ahamiyat bermayman", "Tushuntirishga harakat qilaman", "Jahldor bo'laman", "Munosabatni uzaman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani juda yaxshi bilasiz. Yangi ma'lumot eski bilimingizga zid. Nima qilasiz?",
+    "options": ["Yangi ma'lumotni rad etaman", "Qayta o'rganaman", "Ikkalasini solishtiraman", "Chalkashaman"],
+    "correct": 2
+  },
+  {
+    "question": "Hammaning qilgan ishini siz ham qilsangiz, natija bir xilmi?",
+    "options": ["Ha, albatta", "Yo'q, men boshqachaman", "Ehtimol", "Vaziyatga bog'liq"],
+    "correct": 3
+  },
+  {
+    "question": "Siz biror narsaga ko'p vaqt sarfladingiz. U behuda ekan. Nima qilasiz?",
+    "options": ["Davom etaman, vaqt ketdi-ku", "To'xtataman", "Yakunlayman", "Boshqalarni ayblayman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqalar sizning fikringizni noto'g'ri deydi. Qanday reaksiya qilasiz?",
+    "options": ["Jahldor bo'laman", "Ularning dalilini so'rayman", "O'z fikrimdaman", "Chalkashaman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani \"bilasiz\". Lekin qayerdan bilganingizni eslay olmaysiz. Ishonasizmi?",
+    "options": ["Ha, bilaman-ku", "Yo'q, manba kerak", "Ehtimol to'g'ri", "Boshqalardan so'rayman"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning qo'rqmaydigan narsasidan siz qo'rqsangiz, bu nima degani?",
+    "options": ["Men qo'rqoqman", "Men ehtiyotkorman", "Men ortiqcha qo'rqyapman", "Vaziyatga bog'liq"],
+    "correct": 3
+  },
+  {
+    "question": "Siz biror narsani istaysiz, lekin qimmat. Nima qilasiz?",
+    "options": ["Qarz olaman", "Tejab olaman", "Voz kechaman", "Arzonroq qidiraman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqalar sizning rejangizni yomon deydi. Nima qilasiz?",
+    "options": ["Baribir davom etaman", "Qayta o'ylayman", "Rad etaman", "Boshqa reja tuzaman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani \"his qilasiz\", lekin mantiqan noto'g'ri. Nimaga ishoningsiz?",
+    "options": ["Hisga", "Mantiqqa", "Ikkalasini ham hisobga olaman", "Boshqalardan so'rayman"],
+    "correct": 2
+  },
+  {
+    "question": "Hammaning maqtagan odamini siz yoqtirmasangiz, muammo bormi?",
+    "options": ["Ha, men noto'g'ri", "Yo'q, bu normal", "Ehtimol men tushunmayapman", "Yana bir bor sinab ko'raman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror ishni qilishni xohlamaysiz, lekin majbursiz. Qanday qilasiz?",
+    "options": ["Yomon qilaman", "Eng yaxshi qilib qilaman", "Minimal darajada qilaman", "Boshqasiga topshiraman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqalar sizni aldashmoqchi. Qanday tushunasiz?",
+    "options": ["Hech qachon tushunmayman", "Savollar beraman", "Ishonmayman", "Tekshiraman"],
+    "correct": 3
+  },
+  {
+    "question": "Siz biror narsani juda yaxshi ko'rasiz. Uning kamchiliklarini ko'rasizmi?",
+    "options": ["Yo'q, faqat yaxshi tomoni", "Ha, lekin qabul qilaman", "Kamchilik yo'q", "Ko'rishni xohlamayman"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning ishongan narsasiga dalil yo'q. Siz ishonasizmi?",
+    "options": ["Ha, hamma ishonsa to'g'ri", "Yo'q, dalil kerak", "Ehtimol to'g'ri", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror qaror qabul qildingiz va noto'g'ri ekan. Nima qilasiz?",
+    "options": ["Davom etaman", "O'zgartirishga tayyor", "Boshqalarni ayblayman", "Yashiraman"],
+    "correct": 1
+  },
+  {
+    "question": "Boshqalar sizning xatoyingizni ko'rsa, nima qilasiz?",
+    "options": ["Yashiraman", "Tan olaman", "Bahona topaman", "Boshqalarni ayblayman"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani \"bilasiz\", lekin dalil yo'q. Bu bilimmi?",
+    "options": ["Ha, bilim", "Yo'q, ishonch", "Ehtimol bilim", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning qilgan xatosini siz ham qilsangiz, bu normalmi?",
+    "options": ["Ha, hamma qiladi", "Yo'q, men javobgarman", "Ehtimol", "Vaziyatga bog'liq"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani istaysiz, lekin oqibati yomon. Nima qilasiz?",
+    "options": ["Baribir olaman", "Voz kechaman", "Oqibatni o'ylayman", "Keyinroq qaror qilaman"],
+    "correct": 2
+  },
+  {
+    "question": "Boshqalar sizning fikringizga qo'shilmasa, fikringizni o'zgartirasizmi?",
+    "options": ["Ha, darhol", "Yo'q, o'zim bilaman", "Ularning sababini tinglayman", "Ehtimol"],
+    "correct": 2
+  },
+  {
+    "question": "Siz biror narsani \"sezasiz\". Bu ishonch hosil qiladimi?",
+    "options": ["Ha, sezgi aldamaydi", "Yo'q, dalil kerak", "Ba'zan", "Odamga bog'liq"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning qo'rqqan narsasidan qo'rqmaslik - jasurlikmi yoki beparvolikmi?",
+    "options": ["Jasurlik", "Beparvolik", "Vaziyatga bog'liq", "Bilmayman"],
+    "correct": 2
+  },
+  {
+    "question": "Siz biror ishni qilishni rejalashtirdingiz, lekin qiyin. Nima qilasiz?",
+    "options": ["Voz kechaman", "Osonroq yo'l qidiraman", "Qiyinchilikka tayyor", "Yordam so'rayman"],
+    "correct": 2
+  },
+  {
+    "question": "Boshqalar sizning qaroringizni yoqtirsa, bu qaror to'g'rimi?",
+    "options": ["Ha, albatta", "Yo'q, ular ham xato qilishi mumkin", "Ehtimol", "Ishonch hosil qildi"],
+    "correct": 1
+  },
+  {
+    "question": "Siz biror narsani bilmasligingizni tan olish - kuchlilikmi yoki zaiflikmi?",
+    "options": ["Zaiflik", "Kuchlilik", "Uyat", "Muhim emas"],
+    "correct": 1
+  },
+  {
+    "question": "Hammaning yoqtirgan narsasini sinab ko'rmasdan rad etish - to'g'rimi?",
+    "options": ["Ha, men bilaman", "Yo'q, sinab ko'rish kerak", "Ehtimol", "Muhim emas"],
+    "correct": 1
+  }
+]

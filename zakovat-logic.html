@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakovat Mantiq Testi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #818cf8;
+            --success-color: #22c55e;
+            --error-color: #ef4444;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: var(--card-background);
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 700px;
+            width: 95%;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 0.5rem;
+            background-color: #e2e8f0;
+            border-radius: 0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 0.25rem;
+            transition: width 0.3s ease;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        .question-card {
+            background-color: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            color: #1e293b;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            line-height: 1.4;
+        }
+
+        .options-container {
+            display: grid;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-btn {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            text-align: left;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--primary-color);
+            background-color: #f5f3ff;
+        }
+
+        .option-btn.correct {
+            border-color: var(--success-color);
+            background-color: #f0fdf4;
+            color: var(--success-color);
+        }
+
+        .option-btn.wrong {
+            border-color: var(--error-color);
+            background-color: #fef2f2;
+            color: var(--error-color);
+        }
+
+        .option-prefix {
+            font-weight: 700;
+            color: var(--primary-color);
+            background: #eef2ff;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        button.action-btn {
+            flex: 1;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        button.action-btn:hover:not(:disabled) {
+            background-color: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        button.action-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .feedback {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            font-weight: 600;
+            min-height: 1.5rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 1.2rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 8px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 1.5rem auto;
+            color: var(--primary-color);
+        }
+
+        .results-info {
+            margin-bottom: 2rem;
+            color: #475569;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .container { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕯️ Zakovat Mantiq</h1>
+        <p class="subtitle">Texnologiya, jamiyat va tafakkur testi</p>
+
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <div class="stats">
+            <span>Savol: <span id="current-q-index">1</span> / <span id="total-q-count">60</span></span>
+            <span>To'g'ri: <span id="correct-count">0</span></span>
+            <span>Ball: <span id="score-percent">0</span>%</span>
+        </div>
+
+        <div class="question-card" id="question-text">Savollar yuklanmoqda...</div>
+
+        <div class="options-container" id="options-grid"></div>
+
+        <div class="button-group">
+            <button class="action-btn" id="next-btn" onclick="goToNextQuestion()" disabled>
+                Keyingi savol <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="feedback" id="feedback-text"></div>
+    </div>
+
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2>Natijangiz</h2>
+            <div class="score-circle" id="final-score-percent">0%</div>
+            <div class="results-info">
+                <p>Jami savollar: <span id="final-total">0</span></p>
+                <p>To'g'ri javoblar: <span id="final-correct">0</span></p>
+            </div>
+            <button class="action-btn" onclick="restartQuiz()">
+                <i class="fas fa-redo"></i> Qayta boshlash
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentIndex = 0;
+        let correctCount = 0;
+        let answered = false;
+
+        async function init() {
+            try {
+                const response = await fetch('zakovat-logic.json');
+                questions = await response.json();
+                document.getElementById('total-q-count').textContent = questions.length;
+                loadQuestion();
+            } catch (error) {
+                console.error("Savollarni yuklashda xatolik:", error);
+                document.getElementById('question-text').textContent = "Xatolik: Savollarni yuklab bo'lmadi.";
+            }
+        }
+
+        function loadQuestion() {
+            answered = false;
+            const q = questions[currentIndex];
+            document.getElementById('question-text').textContent = q.question;
+            document.getElementById('current-q-index').textContent = currentIndex + 1;
+            document.getElementById('feedback-text').textContent = "";
+            document.getElementById('next-btn').disabled = true;
+
+            const grid = document.getElementById('options-grid');
+            grid.innerHTML = "";
+
+            const prefixes = ['A', 'B', 'C', 'D'];
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `<span class="option-prefix">${prefixes[idx]}</span> ${opt}`;
+                btn.onclick = () => handleAnswer(idx);
+                grid.appendChild(btn);
+            });
+
+            updateProgress();
+        }
+
+        function handleAnswer(selectedIdx) {
+            if (answered) return;
+            answered = true;
+
+            const q = questions[currentIndex];
+            const btns = document.querySelectorAll('.option-btn');
+            
+            if (selectedIdx === q.correct) {
+                btns[selectedIdx].classList.add('correct');
+                correctCount++;
+                document.getElementById('feedback-text').innerHTML = "<span style='color: var(--success-color)'>To'g'ri! <i class='fas fa-check-circle'></i></span>";
+            } else {
+                btns[selectedIdx].classList.add('wrong');
+                btns[q.correct].classList.add('correct');
+                document.getElementById('feedback-text').innerHTML = "<span style='color: var(--error-color)'>Noto'g'ri <i class='fas fa-times-circle'></i></span>";
+            }
+
+            document.getElementById('correct-count').textContent = correctCount;
+            document.getElementById('score-percent').textContent = Math.round((correctCount / (currentIndex + 1)) * 100);
+            document.getElementById('next-btn').disabled = false;
+        }
+
+        function goToNextQuestion() {
+            currentIndex++;
+            if (currentIndex < questions.length) {
+                loadQuestion();
+            } else {
+                showFinalResults();
+            }
+        }
+
+        function updateProgress() {
+            const prog = ((currentIndex) / questions.length) * 100;
+            document.getElementById('progress').style.width = prog + "%";
+        }
+
+        function showFinalResults() {
+            const percent = Math.round((correctCount / questions.length) * 100);
+            document.getElementById('final-score-percent').textContent = percent + "%";
+            document.getElementById('final-total').textContent = questions.length;
+            document.getElementById('final-correct').textContent = correctCount;
+            document.getElementById('results-modal').style.display = 'flex';
+        }
+
+        function restartQuiz() {
+            currentIndex = 0;
+            correctCount = 0;
+            document.getElementById('results-modal').style.display = 'none';
+            document.getElementById('correct-count').textContent = "0";
+            document.getElementById('score-percent').textContent = "0";
+            loadQuestion();
+        }
+
+        init();
+    </script>
+</body>
+</html>
